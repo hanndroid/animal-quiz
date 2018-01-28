@@ -1,0 +1,54 @@
+<resources>
+<string name="app_name">\n\n\n\n○・●・○・●・○・●・○・●・○・●・○</string>
+<string name="title"> ─◇ Animal Quiz ◇─ </string>
+<string name="intro">Can you tell your turtles from your tortoises? Let\'s find out!</string>
+<string name="swipe_right">Swipe right  ➟</string>
+<string name="question_one">Question One</string>
+    <string name="question_two">Question Two</string>
+    <string name="question_three">Question Three</string>
+    <string name="question_four">Question Four</string>
+    <string name="question_five">Question Five</string>
+    <string name="question_six">Question Six</string>
+    <string name="question_seven">Question Seven</string>
+    <string name="question_eight">Question Eight</string>
+    <string name="question_nine">Question Nine</string>
+    <string name="question_ten">Question Ten</string>
+
+    <string name="q1text">Is this an alligator or a crocodile? </string>
+    <string name="q1alligator">Alligator</string>
+    <string name="q1crocodile">Crocodile</string>
+
+    <string name="q2text">Is this a leopard or a cheetah?</string>
+    <string name="q2leopard">Leopard</string>
+    <string name="q2cheetah">Cheetah</string>
+
+    <string name="q3text">Is this a porpoise or a dolphin?</string>
+    <string name="q3Porpoise">Porpoise</string>
+    <string name="q3Dolphin">Dolphin</string>
+
+    <string name="q4text">Are these llamas or alpacas?</string>
+    <string name="q4llama">Llamas</string>
+    <string name="q4alpaca">Alpacas</string>
+
+    <string name="q5text">Is this a toad or a frog?</string>
+    <string name="q5toad">Toad</string>
+    <string name="q5frog">Frog</string>
+
+    <string name="q6text">Which animal is this? Type your answer below</string>
+    <string name="q6hint">Hint: It isn\'t a seal!</string>
+
+    <string name="q7text">Which type of animal is this?</string>
+    <string name="q7text2">Select two correct answers:</string>
+    <string name="lizard">Lizard</string>
+    <string name="amphibian">Amphibian</string>
+    <string name="salamander">Salamander</string>
+    <string name="reptile">Reptile</string>
+
+    <string name="submitanswers">submit answers</string>
+
+
+
+</resources>
+
+
+
