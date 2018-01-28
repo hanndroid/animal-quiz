@@ -35,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
                     return Question1Fragment.newInstance("question 1");
                 case 2:
                     return Question2Fragment.newInstance("question 2");
+                case 3:
+                    return Question3Fragment.newInstance("question 3");
+                case 4:
+                    return Question4Fragment.newInstance("question 4");
+                case 5:
+                    return Question5Fragment.newInstance("question 5");
+                case 6:
+                    return Question6Fragment.newInstance("question 6");
+                case 7:
+                    return Question7Fragment.newInstance("question 7");
                 case 8:
                     return ResultsFragment.newInstance("results");
             }
@@ -42,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 5;
+            return 9;
         }
     }
 }
