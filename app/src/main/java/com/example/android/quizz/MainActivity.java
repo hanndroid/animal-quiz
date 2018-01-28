@@ -1,23 +1,28 @@
 package com.example.android.quizz;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
-
-
-import com.example.android.quizz.R;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // @+id/submit_answers
+        Button btn = (Button)findViewById(R.id.submit_answers);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AnswerActivity.class));
+            }
+        });
     }
-
-
-
-
 }
 
 

@@ -433,7 +433,8 @@
             android:text="@string/submitanswers"
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:onClick="submitanswers"/>
 
 
 
