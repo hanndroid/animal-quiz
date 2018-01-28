@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewPager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    />
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,10 +21,11 @@
         android:layout_height="match_parent"
         android:background="@drawable/grey"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity">-->
 
 
-        <TextView
+
+        <!--<TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -435,9 +446,10 @@
             android:fontFamily="sans-serif-light"
             android:layout_marginTop="20dp"
             android:onClick="submitanswers"/>
+-->
 
 
-
+<!--
     </LinearLayout>
 
-</ScrollView>
+</ScrollView>-->
