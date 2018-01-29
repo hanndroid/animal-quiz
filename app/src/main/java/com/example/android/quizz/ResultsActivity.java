@@ -28,9 +28,9 @@ public class ResultsActivity extends AppCompatActivity {
             public Fragment getItem(int pos) {
                 switch (pos) {
                     default:
-                        return IntroFragment.newInstance("");
+                        return IntroFragment.newInstance();
                     case 0:
-                        return ResultsFragment.newInstance("");
+                        return ResultsFragment.newInstance();
                 }
             }
 

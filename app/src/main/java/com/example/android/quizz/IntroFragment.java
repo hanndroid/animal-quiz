@@ -19,11 +19,10 @@ public class IntroFragment extends Fragment {
         return v;
     }
 
-    public static IntroFragment newInstance(String text) {
+    public static IntroFragment newInstance() {
 
         IntroFragment f = new IntroFragment();
         Bundle b = new Bundle();
-        b.putString("msg", text);
 
         f.setArguments(b);
 

@@ -19,12 +19,10 @@ public class Question1Fragment extends Fragment {
         return v;
     }
 
-    public static Question1Fragment newInstance(String text) {
+    public static Question1Fragment newInstance() {
 
         Question1Fragment f = new Question1Fragment();
         Bundle b = new Bundle();
-        b.putString("msg", text);
-
         f.setArguments(b);
 
         return f;

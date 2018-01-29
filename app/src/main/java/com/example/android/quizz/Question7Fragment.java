@@ -32,11 +32,10 @@ public class Question7Fragment extends Fragment {
         return v;
     }
 
-    public static Question7Fragment newInstance(String text) {
+    public static Question7Fragment newInstance() {
 
         Question7Fragment f = new Question7Fragment();
         Bundle b = new Bundle();
-        b.putString("msg", text);
 
         f.setArguments(b);
 

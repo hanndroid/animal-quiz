@@ -28,23 +28,23 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int pos) {
             switch (pos) {
                 default:
-                    return IntroFragment.newInstance("");
+                    return IntroFragment.newInstance();
                 case 0:
-                    return IntroFragment.newInstance("");
+                    return IntroFragment.newInstance();
                 case 1:
-                    return Question1Fragment.newInstance("");
+                    return Question1Fragment.newInstance();
                 case 2:
-                    return Question2Fragment.newInstance("");
+                    return Question2Fragment.newInstance();
                 case 3:
-                    return Question3Fragment.newInstance("");
+                    return Question3Fragment.newInstance();
                 case 4:
-                    return Question4Fragment.newInstance("");
+                    return Question4Fragment.newInstance();
                 case 5:
-                    return Question5Fragment.newInstance("");
+                    return Question5Fragment.newInstance();
                 case 6:
-                    return Question6Fragment.newInstance("");
+                    return Question6Fragment.newInstance();
                 case 7:
-                    return Question7Fragment.newInstance("");
+                    return Question7Fragment.newInstance();
             }
         }
 

@@ -19,13 +19,12 @@ public class ResultsFragment extends Fragment {
         return v;
     }
 
-    public static ResultsFragment newInstance(String text) {
+    public static ResultsFragment newInstance() {
 
         System.out.println("creating results fragment");
 
         ResultsFragment f = new ResultsFragment();
         Bundle b = new Bundle();
-        b.putString("msg", text);
 
         f.setArguments(b);
 
