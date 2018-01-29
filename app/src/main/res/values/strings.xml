@@ -2,7 +2,7 @@
 <string name="app_name">\n\n\n\n○・●・○・●・○・●・○・●・○・●・○</string>
 <string name="title"> ─◇ Animal Quiz ◇─ </string>
 <string name="intro">Can you tell your turtles from your tortoises? Let\'s find out!</string>
-<string name="swipe_right">Swipe right  ➟</string>
+<string name="swipe_right">Swipe right ➟ </string>
 <string name="question_one">Question One</string>
     <string name="question_two">Question Two</string>
     <string name="question_three">Question Three</string>
@@ -17,6 +17,7 @@
     <string name="q1text">Is this an alligator or a crocodile? </string>
     <string name="q1alligator">Alligator</string>
     <string name="q1crocodile">Crocodile</string>
+    <string name="nextQ">Next Question ➟ </string>
 
     <string name="q2text">Is this a leopard or a cheetah?</string>
     <string name="q2leopard">Leopard</string>
@@ -34,17 +35,17 @@
     <string name="q5toad">Toad</string>
     <string name="q5frog">Frog</string>
 
-    <string name="q6text">Which animal is this? Type your answer below</string>
-    <string name="q6hint">Hint: It isn\'t a seal!</string>
-
-    <string name="q7text">Which type of animal is this?</string>
-    <string name="q7text2">Select two correct answers:</string>
+    <string name="q6text">Which type of animal is this?</string>
+    <string name="q6text2">Select two correct answers:</string>
     <string name="lizard">Lizard</string>
     <string name="amphibian">Amphibian</string>
     <string name="salamander">Salamander</string>
     <string name="reptile">Reptile</string>
 
-    <string name="submitanswers">submit answers</string>
+    <string name="q7text">Which animal is this?</string>
+    <string name="q7bar">Type your answer here</string>
+
+    <string name="submitAnswers">See Results!</string>
 
     <string name="results">─◇ Results ◇─</string>
 
