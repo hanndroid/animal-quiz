@@ -1,107 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grey">
+    android:background="@drawable/grey"
+    android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/grey"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvFragSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textSize="26dp" />
 
-        <TextView
-            android:id="@+id/tvFragSecond"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="TextView"
-            android:textSize="26dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="6dp"
+        android:paddingTop="30dp"
+        android:text="@string/question_seven"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:paddingLeft="6dp"
-            android:paddingTop="30dp"
-            android:text="@string/question_seven"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="18dp"
+        android:text="@string/q7text"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:paddingLeft="18dp"
-            android:text="@string/q7text"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="273dp"
+        android:src="@drawable/salamander" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="273dp"
-            android:src="@drawable/salamander" />
-        <TextView
-            android:paddingTop="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:paddingLeft="16dp"
-            android:text="@string/q7text2"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/q7text2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
 
+    <CheckBox
+        android:id="@+id/q7lizard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lizard"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
-        <CheckBox
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:id="@+id/q7lizard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lizard"
-            android:textAppearance="?android:textAppearanceMedium" />
-        <CheckBox
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:id="@+id/q7amphibian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/amphibian"
-            android:textAppearance="?android:textAppearanceMedium" />
-        <CheckBox
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:id="@+id/q7salamander"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/salamander"
-            android:textAppearance="?android:textAppearanceMedium" />
-        <CheckBox
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:id="@+id/q8reptile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/reptile"
-            android:textAppearance="?android:textAppearanceMedium" />
+    <CheckBox
+        android:id="@+id/q7amphibian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amphibian"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
-        <Button
-            android:layout_gravity="center"
-            android:textSize="16sp"
-            android:id="@+id/submit_answers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/submitanswers"
-            android:background="#FFFFFF"
-            android:fontFamily="sans-serif-light"
-            android:layout_marginTop="20dp"
-            android:onClick="submitanswers"/>
+    <CheckBox
+        android:id="@+id/q7salamander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salamander"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/q8reptile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reptile"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/submit_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:onClick="submitanswers"
+        android:text="@string/submitanswers"
+        android:textSize="16sp" />
 
 
-    </LinearLayout>
+</LinearLayout>
 
-</ScrollView>
