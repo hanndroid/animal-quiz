@@ -46,20 +46,22 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <RadioButton android:buttonTint="#FFFFFF"
+        <RadioButton
             android:id="@+id/q4llamas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
             android:paddingLeft="16dp"
             android:text="@string/q4llama"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <RadioButton android:buttonTint="#FFFFFF"
+        <RadioButton
             android:id="@+id/q4alpacas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
             android:paddingLeft="16dp"
             android:text="@string/q4alpaca"

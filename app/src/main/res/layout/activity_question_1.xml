@@ -52,10 +52,11 @@
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
-        <RadioButton android:buttonTint="#FFFFFF"
+        <RadioButton
             android:id="@+id/q1alligator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
             android:onClick="alligator"
             android:text="@string/q1alligator"
@@ -66,12 +67,12 @@
             android:id="@+id/q1crocodile"
             android:layout_width="wrap_content"
             android:layout_height="44dp"
+            android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
             android:onClick="crocodile"
             android:text="@string/q1crocodile"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:buttonTint="#FFFFFF"/>
+            android:textSize="20sp" />
         />
     </RadioGroup>
 

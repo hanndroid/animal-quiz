@@ -21,7 +21,6 @@ public class Question7Fragment extends Fragment {
         tv.setText(getArguments().getString("msg"));
 
         Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
-        //submitAnswersBtn.setOnClickListener(this);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), ResultsActivity.class);
@@ -32,26 +31,6 @@ public class Question7Fragment extends Fragment {
 
         return v;
     }
-
-    /*@Override
-    public void onClick(View view) {
-        Fragment fragment = null;
-        switch (view.getId()) {
-            case R.id.submit_answers:
-                System.out.println("helelelelele");
-                fragment = ResultsFragment.newInstance("");
-                replaceFragment(fragment);
-                break;
-        }
-    }
-
-    public void replaceFragment(Fragment someFragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.question7View, someFragment);
-        System.out.println("switching views");
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }*/
 
     public static Question7Fragment newInstance(String text) {
 

@@ -47,19 +47,21 @@
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
-        <RadioButton android:buttonTint="#FFFFFF"
+        <RadioButton
             android:id="@+id/q3porpoise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
             android:text="@string/q3Porpoise"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <RadioButton android:buttonTint="#FFFFFF"
+        <RadioButton
             android:id="@+id/q3dolphin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
             android:text="@string/q3Dolphin"
             android:textColor="#FFFFFF"

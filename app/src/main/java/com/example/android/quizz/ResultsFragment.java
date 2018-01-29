@@ -31,5 +31,5 @@ public class ResultsFragment extends Fragment {
 
         return f;
     }
-    
+
 }
