@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/grey"
+    android:id="@+id/question7View"
     android:orientation="vertical">
 
     <TextView
@@ -62,7 +63,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:background="#FFFFFF"
-        android:onClick="submitanswers"
+        android:onClick="submitAnswers"
         android:text="@string/submitAnswers"
         android:textSize="16sp" />
 
