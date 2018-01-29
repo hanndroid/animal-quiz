@@ -41,7 +41,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="312dp"
+        android:layout_height="288dp"
         android:src="@drawable/alligator" />
 
     <RadioGroup
@@ -72,18 +72,6 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/swipe"
-        android:layout_width="wrap_content"
-        android:layout_height="83dp"
-        android:layout_gravity="right"
-        android:fontFamily="sans-serif-light"
-        android:gravity="bottom"
-        android:paddingRight="16dp"
-        android:text="@string/nextQ"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
 
 </LinearLayout>
 
