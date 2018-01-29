@@ -52,7 +52,7 @@
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
-        <RadioButton
+        <RadioButton android:buttonTint="#FFFFFF"
             android:id="@+id/q1alligator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +70,9 @@
             android:onClick="crocodile"
             android:text="@string/q1crocodile"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:buttonTint="#FFFFFF"/>
+        />
     </RadioGroup>
 
 </LinearLayout>

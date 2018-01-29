@@ -51,7 +51,7 @@
         android:textSize="18sp" />
 
 
-    <CheckBox
+    <CheckBox android:buttonTint="#FFFFFF"
         android:id="@+id/q7lizard"
         android:layout_width="142dp"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
-    <CheckBox
+    <CheckBox android:buttonTint="#FFFFFF"
         android:id="@+id/q7amphibian"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
-    <CheckBox
+    <CheckBox android:buttonTint="#FFFFFF"
         android:id="@+id/q7salamander"
         android:layout_width="142dp"
         android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
-    <CheckBox
+    <CheckBox android:buttonTint="#FFFFFF"
         android:id="@+id/q8reptile"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
