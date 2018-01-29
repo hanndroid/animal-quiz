@@ -13,7 +13,7 @@ public class ResultsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_results, container, false);
 
-        TextView tv = (TextView) v.findViewById(R.id.tvFragThird);
+        TextView tv = v.findViewById(R.id.tvFragThird);
         tv.setText(getArguments().getString("msg"));
 
         return v;

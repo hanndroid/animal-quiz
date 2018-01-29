@@ -17,10 +17,10 @@ public class Question7Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_question_7, container, false);
 
-        TextView tv = (TextView) v.findViewById(R.id.tvFragSecond);
+        TextView tv = v.findViewById(R.id.tvFragSecond);
         tv.setText(getArguments().getString("msg"));
 
-        Button submitAnswersBtn = (Button) v.findViewById(R.id.submit_answers);
+        Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
         //submitAnswersBtn.setOnClickListener(this);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

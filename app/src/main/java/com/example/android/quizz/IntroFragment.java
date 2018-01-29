@@ -13,7 +13,7 @@ public class IntroFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_intro, container, false);
 
-        TextView tv = (TextView) v.findViewById(R.id.tvFragFirst);
+        TextView tv = v.findViewById(R.id.tvFragFirst);
         tv.setText(getArguments().getString("msg"));
 
         return v;
