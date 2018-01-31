@@ -52,7 +52,7 @@
 
 
     <CheckBox
-        android:id="@+id/q7lizard"
+        android:id="@+id/q6lizard"
         android:layout_width="142dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -60,10 +60,11 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/lizard"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="lizardOrReptile"/>
 
     <CheckBox
-        android:id="@+id/q7amphibian"
+        android:id="@+id/q6amphibian"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -71,10 +72,11 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/amphibian"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="lizardOrReptile"/>
 
     <CheckBox
-        android:id="@+id/q7salamander"
+        android:id="@+id/q6salamander"
         android:layout_width="142dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -82,10 +84,11 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/salamander"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="lizardOrReptile"/>
 
     <CheckBox
-        android:id="@+id/q8reptile"
+        android:id="@+id/q6reptile"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -93,7 +96,8 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/reptile"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="lizardOrReptile"/>
 
 
 </LinearLayout>

@@ -60,13 +60,13 @@
         <RadioButton
             android:id="@+id/q2leopard"
             android:layout_width="wrap_content"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
+            android:onClick="isLeopardOrCheetah"
             android:text="@string/q2leopard"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:onClick="isLeopardOrCheetah"/>
+            android:textSize="20sp" />
     </RadioGroup>
 
 </LinearLayout>

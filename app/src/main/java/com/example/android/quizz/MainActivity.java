@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -149,6 +150,31 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q5prince:
                 if (checked)
                     System.out.println("prince");
+                break;
+        }
+    }
+
+    public void lizardOrReptile(View view) {
+        // Is the button now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.q6lizard:
+                if (checked)
+                    System.out.println("really");
+                break;
+            case R.id.q6amphibian:
+                if (checked)
+                    System.out.println("rude");
+                break;
+            case R.id.q6salamander:
+                if (checked)
+                    System.out.println("you shall not pass");
+                break;
+            case R.id.q6reptile:
+                if (checked)
+                    System.out.println("see ya");
                 break;
         }
     }

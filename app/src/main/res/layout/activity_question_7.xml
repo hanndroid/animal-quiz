@@ -45,7 +45,7 @@
 
 
     <EditText
-        android:id="@+id/q6"
+        android:id="@+id/q7"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_gravity="center"
@@ -54,7 +54,8 @@
         android:inputType="textShortMessage"
         android:paddingRight="16dp"
         android:textSize="18sp"
-        android:theme="@android:style/Theme.Holo.Light" />
+        android:theme="@android:style/Theme.Holo.Light"
+        android:onClick="sealOrSeaLion"/>
 
     <Button
         android:id="@+id/submit_answers"
