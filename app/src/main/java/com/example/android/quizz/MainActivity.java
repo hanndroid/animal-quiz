@@ -22,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // TODO move me into a proper method
+        //TextView resultsTextView = (TextView) findViewById(R.id.resultsTextView);
+        //resultsTextView.setText(results);
+
         ViewPager pager = findViewById(R.id.viewPager);
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
     }
@@ -60,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void displayToastie(CharSequence text) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
     public void guessReptile(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -69,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q1alligator:
                 if (checked) {
                     results++;
+                    displayToastie("Correct! Score updated to: " + results);
                 }
                 break;
             case R.id.q1crocodile:
@@ -89,13 +101,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void displayToastie(CharSequence text) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
     public void isLeopardOrCheetah(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -103,13 +108,17 @@ public class MainActivity extends AppCompatActivity {
         // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q2leopard:
-                if (checked)
-                    System.out.println("leopard");
+                if (checked) {
+                    results++;
+                    displayToastie("Correct! Score updated to: " + results);
+                }
                 break;
             case R.id.q2Cheetah:
-                if (checked)
-                    System.out.println("cheetah");
+                if (checked) {
+                    displayToastie("This is not a cheetah");
+                }
                 break;
+
         }
     }
 
@@ -119,13 +128,16 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q3porpoise:
-                if (checked)
-                    System.out.println("porpoise");
-                break;
             case R.id.q3dolphin:
-                if (checked)
-                    System.out.println("dolphin");
+                if (checked) {
+                    results++;
+                    displayToastie("Correct! Score updated to: " + results);
+                }
+                break;
+            case R.id.q3porpoise:
+                if (checked) {
+                    displayToastie("This is not a porpoise");
+                }
                 break;
         }
     }
@@ -136,13 +148,16 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q4llamas:
-                if (checked)
-                    System.out.println("llama");
-                break;
             case R.id.q4alpacas:
-                if (checked)
-                    System.out.println("alpaca");
+                if (checked) {
+                    results++;
+                    displayToastie("Correct! Score updated to: " + results);
+                }
+                break;
+            case R.id.q4llamas:
+                if (checked) {
+                    displayToastie("These are not alpacas");
+                }
                 break;
         }
     }
@@ -154,16 +169,20 @@ public class MainActivity extends AppCompatActivity {
         // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q5toad:
-                if (checked)
-                    System.out.println("toad");
+                if (checked) {
+                    results++;
+                    displayToastie("Correct! Score updated to: " + results);
+                }
                 break;
             case R.id.q5frog:
-                if (checked)
-                    System.out.println("frog");
+                if (checked) {
+                    displayToastie("This is not a Toad");
+                }
                 break;
             case R.id.q5prince:
-                if (checked)
-                    System.out.println("prince");
+                if (checked) {
+                    displayToastie("Nice try, but it isn't a prince");
+                }
                 break;
         }
     }
@@ -174,21 +193,28 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch (view.getId()) {
-            case R.id.q6lizard:
-                if (checked)
-                    System.out.println("really");
+            case R.id.q6salamander:
+                if (checked) {
+                    results++;
+                    displayToastie("Correct! Score updated to: " + results);
+                }
                 break;
             case R.id.q6amphibian:
-                if (checked)
-                    System.out.println("rude");
+                if (checked) {
+                    results++;
+                    displayToastie("Correct! Score updated to: " + results);
+                }
                 break;
-            case R.id.q6salamander:
-                if (checked)
-                    System.out.println("you shall not pass");
+
+            case R.id.q6lizard:
+                if (checked) {
+                    displayToastie("This is not a lizard");
+                }
                 break;
             case R.id.q6reptile:
-                if (checked)
-                    System.out.println("see ya");
+                if (checked) {
+                    displayToastie("This is not a reptile");
+                }
                 break;
         }
     }
