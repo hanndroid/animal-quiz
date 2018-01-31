@@ -72,4 +72,21 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void isLeopardOrCheetah(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.q2leopard:
+                if (checked)
+                    System.out.println("leopard");
+                break;
+            case R.id.q2Cheetah:
+                if (checked)
+                    System.out.println("cheetah");
+                break;
+        }
+    }
 }

@@ -54,7 +54,8 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/q2cheetah"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isLeopardOrCheetah"/>
 
         <RadioButton
             android:id="@+id/q2leopard"
@@ -64,7 +65,8 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/q2leopard"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isLeopardOrCheetah"/>
     </RadioGroup>
 
 </LinearLayout>
