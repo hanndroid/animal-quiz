@@ -1,5 +1,6 @@
 package com.example.android.quizz;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,22 +67,33 @@ public class MainActivity extends AppCompatActivity {
         // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q1alligator:
-                if (checked)
-                    System.out.println("ALLI");
+                if (checked) {
+                    results++;
+                }
                 break;
             case R.id.q1crocodile:
-                if (checked)
-                    System.out.println("Geoff");
+                if (checked) {
+                    displayToastie("This is not a crocodile");
+                }
                 break;
             case R.id.q1gharial:
-                if (checked)
-                    System.out.println("gharial");
+                if (checked) {
+                    displayToastie("This is not a gharial");
+                }
                 break;
             case R.id.q1caiman:
-                if (checked)
-                    System.out.println("caiman");
+                if (checked) {
+                    displayToastie("This is not a caiman");
+                }
                 break;
         }
+    }
+
+    private void displayToastie(CharSequence text) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     public void isLeopardOrCheetah(View view) {
