@@ -16,13 +16,19 @@ public class Question5Fragment extends Fragment {
         TextView tv = v.findViewById(R.id.tvFragSecond);
         tv.setText(getArguments().getString("msg"));
 
+        int results = getArguments().getInt("results");
+        System.out.println("results = " + results);
+
         return v;
     }
 
-    public static Question5Fragment newInstance() {
+    public static Question5Fragment newInstance(int results) {
+        results++;
+        System.out.println("results: " + results);
 
         Question5Fragment f = new Question5Fragment();
         Bundle b = new Bundle();
+        b.putInt("results", results);
 
         f.setArguments(b);
 

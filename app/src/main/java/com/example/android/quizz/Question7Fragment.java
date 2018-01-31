@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-
 public class Question7Fragment extends Fragment {
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -19,6 +17,9 @@ public class Question7Fragment extends Fragment {
 
         TextView tv = v.findViewById(R.id.tvFragSecond);
         tv.setText(getArguments().getString("msg"));
+
+        int results = getArguments().getInt("results");
+        System.out.println("results = " + results);
 
         Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
@@ -32,10 +33,13 @@ public class Question7Fragment extends Fragment {
         return v;
     }
 
-    public static Question7Fragment newInstance() {
+    public static Question7Fragment newInstance(int results) {
+        results++;
+        System.out.println("results: " + results);
 
         Question7Fragment f = new Question7Fragment();
         Bundle b = new Bundle();
+        b.putInt("results", results);
 
         f.setArguments(b);
 
