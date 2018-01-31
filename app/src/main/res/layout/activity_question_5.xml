@@ -67,6 +67,17 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:onClick="isToadOrFrog"/>
+
+        <RadioButton
+            android:id="@+id/q5prince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/q5prince"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:onClick="isToadOrFrog"/>
     </RadioGroup>
 
 

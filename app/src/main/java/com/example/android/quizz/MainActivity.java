@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void isAlligatorOrCrocodile(View view) {
+    public void guessReptile(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
@@ -69,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q1crocodile:
                 if (checked)
                     System.out.println("Geoff");
+                break;
+            case R.id.q1gharial:
+                if (checked)
+                    System.out.println("gharial");
+                break;
+            case R.id.q1caiman:
+                if (checked)
+                    System.out.println("caiman");
                 break;
         }
     }
@@ -137,6 +145,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q5frog:
                 if (checked)
                     System.out.println("frog");
+                break;
+            case R.id.q5prince:
+                if (checked)
+                    System.out.println("prince");
                 break;
         }
     }

@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:onClick="isAlligatorOrCrocodile"
+            android:onClick="guessReptile"
             android:text="@string/q1alligator"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
@@ -66,11 +66,33 @@
         <RadioButton
             android:id="@+id/q1crocodile"
             android:layout_width="wrap_content"
-            android:layout_height="44dp"
+            android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
-            android:onClick="isAlligatorOrCrocodile"
+            android:onClick="guessReptile"
             android:text="@string/q1crocodile"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q1caiman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:onClick="guessReptile"
+            android:text="@string/q1Gharial"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q1gharial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:onClick="guessReptile"
+            android:text="@string/q1Caiman"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
         />
