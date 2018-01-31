@@ -54,7 +54,8 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/q5toad"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isToadOrFrog"/>
 
         <RadioButton
             android:id="@+id/q5frog"
@@ -64,7 +65,8 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/q5frog"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isToadOrFrog"/>
     </RadioGroup>
 
 

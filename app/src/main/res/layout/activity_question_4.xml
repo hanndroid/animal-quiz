@@ -55,7 +55,8 @@
             android:paddingLeft="16dp"
             android:text="@string/q4llama"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isLlamaOrAlpaca"/>
 
         <RadioButton
             android:id="@+id/q4alpacas"
@@ -66,7 +67,8 @@
             android:paddingLeft="16dp"
             android:text="@string/q4alpaca"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isLlamaOrAlpaca"/>
     </RadioGroup>
 
 </LinearLayout>

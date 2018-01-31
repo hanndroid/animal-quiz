@@ -55,7 +55,8 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/q3Porpoise"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isPorpoiseOrDolphin"/>
 
         <RadioButton
             android:id="@+id/q3dolphin"
@@ -65,7 +66,8 @@
             android:fontFamily="sans-serif-light"
             android:text="@string/q3Dolphin"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="isPorpoiseOrDolphin"/>
     </RadioGroup>
 
 </LinearLayout>

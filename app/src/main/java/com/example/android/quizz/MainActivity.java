@@ -89,4 +89,55 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void isPorpoiseOrDolphin(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.q3porpoise:
+                if (checked)
+                    System.out.println("porpoise");
+                break;
+            case R.id.q3dolphin:
+                if (checked)
+                    System.out.println("dolphin");
+                break;
+        }
+    }
+
+    public void isLlamaOrAlpaca(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.q4llamas:
+                if (checked)
+                    System.out.println("llama");
+                break;
+            case R.id.q4alpacas:
+                if (checked)
+                    System.out.println("alpaca");
+                break;
+        }
+    }
+
+    public void isToadOrFrog(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.q5toad:
+                if (checked)
+                    System.out.println("toad");
+                break;
+            case R.id.q5frog:
+                if (checked)
+                    System.out.println("frog");
+                break;
+        }
+    }
 }
