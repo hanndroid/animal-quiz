@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -178,4 +179,16 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    public void sealOrSeaLion(View v) {
+        EditText sealOrSeaLion = findViewById(R.id.q7seaOrSeaLion);
+        String text = sealOrSeaLion.getText().toString().toLowerCase();
+
+        if (text.contains("sea") && text.contains("lion")) {
+            System.out.println("CORRRRRRRECT");
+        } else {
+            System.out.println("that is wrong on so many levels + politically and ethically incorrect");
+        }
+    }
+
 }

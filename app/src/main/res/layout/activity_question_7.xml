@@ -45,7 +45,7 @@
 
 
     <EditText
-        android:id="@+id/q7"
+        android:id="@+id/q7seaOrSeaLion"
         android:layout_width="350dp"
         android:layout_height="52dp"
         android:layout_gravity="center"
