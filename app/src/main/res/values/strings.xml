@@ -1,9 +1,9 @@
 <resources>
-<string name="app_name">\n\n\n\n○・●・○・●・○・●・○・●・○・●・○</string>
-<string name="title"> ─◇ Animal Quiz ◇─ </string>
-<string name="intro">Can you tell your turtles from your tortoises? Let\'s find out!</string>
-<string name="swipe_right">Swipe right ➟ </string>
-<string name="question_one">Question One</string>
+    <string name="app_name">\n\n\n\n○・●・○・●・○・●・○・●・○・●・○</string>
+    <string name="title"> ─◇ Animal Quiz ◇─ </string>
+    <string name="intro">Can you tell your turtles from your tortoises? Let\'s find out!</string>
+    <string name="swipe_right">Swipe right ➟ </string>
+    <string name="question_one">Question One</string>
     <string name="question_two">Question Two</string>
     <string name="question_three">Question Three</string>
     <string name="question_four">Question Four</string>
@@ -11,8 +11,6 @@
     <string name="question_six">Question Six</string>
     <string name="question_seven">Question Seven</string>
     <string name="question_eight">Question Eight</string>
-    <string name="question_nine">Question Nine</string>
-    <string name="question_ten">Question Ten</string>
 
     <string name="q1text">What animal is this? </string>
     <string name="q1alligator">Alligator</string>
@@ -57,6 +55,13 @@
     <string name="comments">Well Done!</string>
     <string name="explanation">Not sure about all of the answers? Here are some differences among our commonly confused creatures:</string>
 
+    <string name="res1">1. Correct answer: Alligator</string>
+    <string name="res2">2. Correct answer: Leopard</string>
+    <string name="res3">3. Correct answer: Dolphin</string>
+    <string name="res4">4. Correct answer: Alpacas</string>
+    <string name="res5">5. Correct answer: Toad</string>
+    <string name="res6">6. Correct answer: Salamander, Amphibian</string>
+    <string name="res7">7. Correct answer: Sea Lion</string>
 
 
 </resources>
