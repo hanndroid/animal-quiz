@@ -9,16 +9,6 @@ import android.widget.TextView;
 
 public class IntroFragment extends Fragment {
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_intro, container, false);
-
-        TextView tv = v.findViewById(R.id.tvFragFirst);
-        tv.setText(getArguments().getString("msg"));
-
-        return v;
-    }
-
     public static IntroFragment newInstance() {
 
         IntroFragment f = new IntroFragment();
@@ -27,6 +17,16 @@ public class IntroFragment extends Fragment {
         f.setArguments(b);
 
         return f;
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.activity_intro, container, false);
+
+        TextView tv = v.findViewById(R.id.tvFragFirst);
+        tv.setText(getArguments().getString("msg"));
+
+        return v;
     }
 
 }

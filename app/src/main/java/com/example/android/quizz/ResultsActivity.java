@@ -19,12 +19,10 @@ public class ResultsActivity extends AppCompatActivity {
             setContentView(R.layout.activity_main);
 
             passedArg = getIntent().getStringExtra(ARG_FROM_MAIN);
-            System.out.println("passedArg = " + passedArg);
 
             /*TextView resultsTextView = (TextView) findViewById(R.id.resultsTextView);
             if (passedArg!=null && resultsTextView!=null) {
                 resultsTextView.setText(passedArg);
-                System.out.println("YEEEEY");
             }*/
 
             ViewPager pager = findViewById(R.id.viewPager);

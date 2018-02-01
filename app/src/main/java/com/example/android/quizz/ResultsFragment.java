@@ -22,7 +22,6 @@ public class ResultsFragment extends Fragment {
 
         if (resultsTextView!=null) {
             resultsTextView.setText(arg);
-            System.out.println("YEEEEY");
         }
 
         return v;
@@ -30,7 +29,6 @@ public class ResultsFragment extends Fragment {
 
     public static ResultsFragment newInstance(String passedArg) {
 
-        System.out.println("creating results fragment; " + passedArg);
         arg = passedArg;
         ResultsFragment f = new ResultsFragment();
         Bundle b = new Bundle();

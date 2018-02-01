@@ -13,6 +13,19 @@ import static com.example.android.quizz.ResultsActivity.ARG_FROM_MAIN;
 
 public class Question7Fragment extends Fragment {
 
+    public static Question7Fragment newInstance(int results) {
+        results++;
+        System.out.println("results: " + results);
+
+        Question7Fragment f = new Question7Fragment();
+        Bundle b = new Bundle();
+        b.putInt("results", results);
+
+        f.setArguments(b);
+
+        return f;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_question_7, container, false);
@@ -21,7 +34,6 @@ public class Question7Fragment extends Fragment {
         tv.setText(getArguments().getString("msg"));
 
         final int results = getArguments().getInt("results");
-        System.out.println("results = " + results);
 
         Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
@@ -40,29 +52,7 @@ public class Question7Fragment extends Fragment {
 
         });
 
-        /*Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
-        submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), ResultsActivity.class);
-                startActivityForResult(myIntent, 0);
-            }
-
-        });*/
-
         return v;
-    }
-
-    public static Question7Fragment newInstance(int results) {
-        results++;
-        System.out.println("results: " + results);
-
-        Question7Fragment f = new Question7Fragment();
-        Bundle b = new Bundle();
-        b.putInt("results", results);
-
-        f.setArguments(b);
-
-        return f;
     }
 
 }

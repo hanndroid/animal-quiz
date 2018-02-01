@@ -26,48 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
         ViewPager pager = findViewById(R.id.viewPager);
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
 
 
-
-
-    }
-
-    private class MyPagerAdapter extends FragmentPagerAdapter {
-
-        public MyPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int pos) {
-            switch (pos) {
-                default:
-                    return IntroFragment.newInstance();
-                case 1:
-                    return Question1Fragment.newInstance(results);
-                case 2:
-                    return Question2Fragment.newInstance(results);
-                case 3:
-                    return Question3Fragment.newInstance(results);
-                case 4:
-                    return Question4Fragment.newInstance(results);
-                case 5:
-                    return Question5Fragment.newInstance(results);
-                case 6:
-                    return Question6Fragment.newInstance(results);
-                case 7:
-                    return Question7Fragment.newInstance(results);
-            }
-        }
-
-        @Override
-        public int getCount() {
-            return 8;
-        }
     }
 
     private void displayToastie(CharSequence text) {
@@ -108,10 +70,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void isLeopardOrCheetah(View view) {
-        // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q2leopard:
                 if (checked) {
@@ -129,10 +89,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void isPorpoiseOrDolphin(View view) {
-        // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q3dolphin:
                 if (checked) {
@@ -149,10 +107,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void isLlamaOrAlpaca(View view) {
-        // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q4alpacas:
                 if (checked) {
@@ -162,17 +118,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q4llamas:
                 if (checked) {
-                    displayToastie("These are not alpacas");
+                    displayToastie("These are not llamas");
                 }
                 break;
         }
     }
 
     public void isToadOrFrog(View view) {
-        // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q5toad:
                 if (checked) {
@@ -187,17 +141,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q5prince:
                 if (checked) {
-                    displayToastie("Nice try, but it isn't a prince");
+                    displayToastie("Nice try!");
                 }
                 break;
         }
     }
 
     public void lizardOrReptile(View view) {
-        // Is the button now checked?
         boolean checked = ((CheckBox) view).isChecked();
 
-        // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q6salamander:
                 if (checked) {
@@ -230,9 +182,41 @@ public class MainActivity extends AppCompatActivity {
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
         if (text.contains("sea") && text.contains("lion")) {
-            System.out.println("CORRRRRRRECT");
         } else {
-            System.out.println("that is wrong on so many levels + politically and ethically incorrect");
+        }
+    }
+
+    private class MyPagerAdapter extends FragmentPagerAdapter {
+
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int pos) {
+            switch (pos) {
+                default:
+                    return IntroFragment.newInstance();
+                case 1:
+                    return Question1Fragment.newInstance(results);
+                case 2:
+                    return Question2Fragment.newInstance(results);
+                case 3:
+                    return Question3Fragment.newInstance(results);
+                case 4:
+                    return Question4Fragment.newInstance(results);
+                case 5:
+                    return Question5Fragment.newInstance(results);
+                case 6:
+                    return Question6Fragment.newInstance(results);
+                case 7:
+                    return Question7Fragment.newInstance(results);
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 8;
         }
     }
 
