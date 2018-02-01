@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     // ...
 
                     // by default Q1 is false, i.e., not answered
-                    if(!areQuestionsAnswered[0]) {
+                    if (!areQuestionsAnswered[0]) {
                         results++;
                         displayToastie("Correct! Score updated to: " + results);
                         // and now, since we HAVE answered Q1, we set it to TRUE
@@ -136,9 +136,13 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q3dolphin:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(2);
+                    if (!areQuestionsAnswered[2]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q3, we set it to TRUE
+                        questionHasBeenAnswered(2);
+
+                    }
                 }
                 break;
             case R.id.q3porpoise:
@@ -156,9 +160,13 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q4alpacas:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(3);
+                    if (!areQuestionsAnswered[3]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q4, we set it to TRUE
+                        questionHasBeenAnswered(3);
+                    }
+
                 }
                 break;
             case R.id.q4llamas:
@@ -176,9 +184,12 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q5toad:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(4);
+                    if (!areQuestionsAnswered[4]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q5, we set it to TRUE
+                        questionHasBeenAnswered(4);
+                    }
                 }
                 break;
             case R.id.q5frog:
@@ -203,16 +214,22 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q6salamander:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(5);
+                    if (!areQuestionsAnswered[4]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q5, we set it to TRUE
+                        questionHasBeenAnswered(4);
+                    }
                 }
                 break;
             case R.id.q6amphibian:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(5);
+                    if (!areQuestionsAnswered[4]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q5, we set it to TRUE
+                        questionHasBeenAnswered(4);
+                    }
                 }
                 break;
 
@@ -231,8 +248,8 @@ public class MainActivity extends AppCompatActivity {
 
             /*if(R.id.q6amphibian.isChecked() && R.id.q6salamander.isChecked()){
                 results = results+2;*/
-            }
         }
+    }
 
 
     public void sealOrSeaLion(View v) {
@@ -240,8 +257,13 @@ public class MainActivity extends AppCompatActivity {
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
         if (text.contains("sea") && text.contains("lion")) {
-            results++;
-            questionHasBeenAnswered(6);
+            if (!areQuestionsAnswered[6]) {
+                results++;
+                displayToastie("Correct! Score updated to: " + results);
+                // and now, since we HAVE answered Q7, we set it to TRUE
+                questionHasBeenAnswered(6);
+                questionHasBeenAnswered(6);
+            }
         }
     }
 
