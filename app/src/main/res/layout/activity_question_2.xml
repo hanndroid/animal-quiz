@@ -71,6 +71,17 @@
             android:text="@string/q2leopard"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q2Jaguar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/q2jaguar"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:onClick="isLeopardOrCheetah"/>
     </RadioGroup>
 
 </LinearLayout>

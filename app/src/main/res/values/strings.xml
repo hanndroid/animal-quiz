@@ -23,6 +23,7 @@
     <string name="q2text">Is this a leopard or a cheetah?</string>
     <string name="q2leopard">Leopard</string>
     <string name="q2cheetah">Cheetah</string>
+    <string name="q2jaguar">Jaguar</string>
 
     <string name="q3text">Is this a porpoise or a dolphin?</string>
     <string name="q3Porpoise">Porpoise</string>

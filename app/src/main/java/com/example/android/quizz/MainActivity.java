@@ -84,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
                     displayToastie("This is not a cheetah");
                 }
                 break;
+            case R.id.q2Jaguar:
+                if (checked) {
+                    displayToastie("This is not a cheetah");
+                }
+                break;
 
         }
     }
