@@ -9,33 +9,27 @@ import android.widget.TextView;
 
 public class ResultsFragment extends Fragment {
 
-    private static String arg;
+    private static Bundle arg;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_results, container, false);
 
-        TextView tv = v.findViewById(R.id.tvFragThird);
-        tv.setText(getArguments().getString("msg"));
-
-        TextView resultsTextView = (TextView) v.findViewById(R.id.resultsTextView);
+        TextView resultsTextView = v.findViewById(R.id.resultsTextView);
 
         if (resultsTextView!=null) {
-            resultsTextView.setText(arg);
+            String results = arg.getString("results");
+            resultsTextView.setText(results);
         }
 
         return v;
     }
 
-    public static ResultsFragment newInstance(String passedArg) {
+    public static ResultsFragment newInstance(Bundle passedArg) {
 
         arg = passedArg;
         ResultsFragment f = new ResultsFragment();
         Bundle b = new Bundle();
-
-
-
-
 
         f.setArguments(b);
 

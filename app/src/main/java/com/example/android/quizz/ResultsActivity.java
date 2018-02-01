@@ -6,19 +6,18 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
 public class ResultsActivity extends AppCompatActivity {
 
     public static final String ARG_FROM_MAIN = "arg";
-    String passedArg = "";
+    Bundle passedArg;
 
     @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            passedArg = getIntent().getStringExtra(ARG_FROM_MAIN);
+            passedArg = getIntent().getBundleExtra(ARG_FROM_MAIN);
 
             /*TextView resultsTextView = (TextView) findViewById(R.id.resultsTextView);
             if (passedArg!=null && resultsTextView!=null) {

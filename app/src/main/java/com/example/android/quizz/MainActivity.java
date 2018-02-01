@@ -1,7 +1,6 @@
 package com.example.android.quizz;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,7 +8,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -17,8 +15,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String ARG_FROM_MAIN = "arg";
     private int results = 0;
+    private boolean[] areQuestionsAnswered = new boolean[7];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
+    private void questionHasBeenAnswered(int position) {
+        areQuestionsAnswered[position] = true;
+    }
+
     public void guessReptile(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -49,21 +51,25 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(0);
                 }
                 break;
             case R.id.q1crocodile:
                 if (checked) {
                     displayToastie("This is not a crocodile");
+                    questionHasBeenAnswered(0);
                 }
                 break;
             case R.id.q1gharial:
                 if (checked) {
                     displayToastie("This is not a gharial");
+                    questionHasBeenAnswered(0);
                 }
                 break;
             case R.id.q1caiman:
                 if (checked) {
                     displayToastie("This is not a caiman");
+                    questionHasBeenAnswered(0);
                 }
                 break;
         }
@@ -77,16 +83,19 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(1);
                 }
                 break;
             case R.id.q2Cheetah:
                 if (checked) {
                     displayToastie("This is not a cheetah");
+                    questionHasBeenAnswered(1);
                 }
                 break;
             case R.id.q2Jaguar:
                 if (checked) {
                     displayToastie("This is not a cheetah");
+                    questionHasBeenAnswered(1);
                 }
                 break;
 
@@ -101,11 +110,13 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(2);
                 }
                 break;
             case R.id.q3porpoise:
                 if (checked) {
                     displayToastie("This is not a porpoise");
+                    questionHasBeenAnswered(2);
                 }
                 break;
         }
@@ -119,11 +130,13 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(3);
                 }
                 break;
             case R.id.q4llamas:
                 if (checked) {
                     displayToastie("These are not llamas");
+                    questionHasBeenAnswered(3);
                 }
                 break;
         }
@@ -137,16 +150,20 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(4);
                 }
                 break;
             case R.id.q5frog:
                 if (checked) {
                     displayToastie("This is not a Toad");
+                    questionHasBeenAnswered(4);
                 }
                 break;
             case R.id.q5prince:
                 if (checked) {
+                    results++;
                     displayToastie("+ 1 point for knowing your fairy tales! \uD83D\uDC4F");
+                    questionHasBeenAnswered(4);
                 }
                 break;
         }
@@ -160,23 +177,27 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(5);
                 }
                 break;
             case R.id.q6amphibian:
                 if (checked) {
                     results++;
                     displayToastie("Correct! Score updated to: " + results);
+                    questionHasBeenAnswered(5);
                 }
                 break;
 
             case R.id.q6lizard:
                 if (checked) {
                     displayToastie("This is not a lizard");
+                    questionHasBeenAnswered(5);
                 }
                 break;
             case R.id.q6reptile:
                 if (checked) {
                     displayToastie("This is not a reptile");
+                    questionHasBeenAnswered(5);
                 }
                 break;
 
@@ -184,14 +205,15 @@ public class MainActivity extends AppCompatActivity {
                 results = results+2;*/
             }
         }
-    
+
 
     public void sealOrSeaLion(View v) {
         EditText sealOrSeaLion = findViewById(R.id.q7seaOrSeaLion);
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
-        if (text.contains("sea") && text.contains("lion")) { /*results ++;*/
-        } else {
+        if (text.contains("sea") && text.contains("lion")) {
+            results++;
+            questionHasBeenAnswered(6);
         }
     }
 

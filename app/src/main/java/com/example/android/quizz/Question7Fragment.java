@@ -42,7 +42,9 @@ public class Question7Fragment extends Fragment {
                 // ResultsActivity.class is our second activity
                 // we want to send results from MainActivity to ResultsActivity
                 Intent intent = new Intent(view.getContext(), ResultsActivity.class);
-                intent.putExtra(ARG_FROM_MAIN, String.valueOf(results));
+                Bundle values = new Bundle();
+                values.putString("results", String.valueOf(results));
+                intent.putExtra(ARG_FROM_MAIN, values);
                 startActivity(intent);
 
                 System.out.println("intent was set");
