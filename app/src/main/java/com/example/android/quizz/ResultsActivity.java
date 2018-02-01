@@ -13,35 +13,31 @@ public class ResultsActivity extends AppCompatActivity {
     Bundle passedArg;
 
     @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-            passedArg = getIntent().getBundleExtra(ARG_FROM_MAIN);
+        passedArg = getIntent().getBundleExtra(ARG_FROM_MAIN);
 
-            /*TextView resultsTextView = (TextView) findViewById(R.id.resultsTextView);
-            if (passedArg!=null && resultsTextView!=null) {
-                resultsTextView.setText(passedArg);
-            }*/
+        ViewPager pager = findViewById(R.id.viewPager);
+        pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+    }
 
-            ViewPager pager = findViewById(R.id.viewPager);
-            pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+    private class MyPagerAdapter extends FragmentPagerAdapter {
+
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
         }
 
-        private class MyPagerAdapter extends FragmentPagerAdapter {
-
-            public MyPagerAdapter(FragmentManager fm) {
-                super(fm);
-            }
-
-            @Override
-            public Fragment getItem(int pos) {
-                return ResultsFragment.newInstance(passedArg);
-            }
-
-            @Override
-            public int getCount() {
-                return 1;
-            }
+        @Override
+        public Fragment getItem(int pos) {
+            return ResultsFragment.newInstance(passedArg);
         }
+
+        @Override
+        public int getCount() {
+            return 1;
+        }
+    }
+
 }

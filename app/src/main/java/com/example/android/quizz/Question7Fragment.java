@@ -13,14 +13,12 @@ import static com.example.android.quizz.ResultsActivity.ARG_FROM_MAIN;
 
 public class Question7Fragment extends Fragment {
 
-    public static Question7Fragment newInstance(int results) {
-        results++;
-        System.out.println("results: " + results);
+    public static Question7Fragment newInstance(int results, boolean[] areQuestionsAnswered) {
 
         Question7Fragment f = new Question7Fragment();
         Bundle b = new Bundle();
         b.putInt("results", results);
-
+        b.putBooleanArray("areQuestionsAnswered", areQuestionsAnswered);
         f.setArguments(b);
 
         return f;
@@ -30,10 +28,8 @@ public class Question7Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_question_7, container, false);
 
-        TextView tv = v.findViewById(R.id.tvFragSecond);
-        tv.setText(getArguments().getString("msg"));
-
         final int results = getArguments().getInt("results");
+        final boolean[] areQuestionsAnswered = getArguments().getBooleanArray("areQuestionsAnswered");
 
         Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
@@ -43,12 +39,11 @@ public class Question7Fragment extends Fragment {
                 // we want to send results from MainActivity to ResultsActivity
                 Intent intent = new Intent(view.getContext(), ResultsActivity.class);
                 Bundle values = new Bundle();
-                values.putString("results", String.valueOf(results));
+                values.putInt("results", results);
+                values.putBooleanArray("areQuestionsAnswered", areQuestionsAnswered);
+                System.out.println("values = " + values);
                 intent.putExtra(ARG_FROM_MAIN, values);
                 startActivity(intent);
-
-                System.out.println("intent was set");
-                //Intent myIntent = new Intent(view.getContext(), ResultsActivity.class);
                 startActivityForResult(intent, 0);
             }
 

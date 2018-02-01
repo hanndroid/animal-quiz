@@ -225,23 +225,24 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int pos) {
+
             switch (pos) {
                 default:
                     return IntroFragment.newInstance();
                 case 1:
-                    return Question1Fragment.newInstance(results);
+                    return Question1Fragment.newInstance(results, areQuestionsAnswered);
                 case 2:
-                    return Question2Fragment.newInstance(results);
+                    return Question2Fragment.newInstance(results, areQuestionsAnswered);
                 case 3:
-                    return Question3Fragment.newInstance(results);
+                    return Question3Fragment.newInstance(results, areQuestionsAnswered);
                 case 4:
-                    return Question4Fragment.newInstance(results);
+                    return Question4Fragment.newInstance(results, areQuestionsAnswered);
                 case 5:
-                    return Question5Fragment.newInstance(results);
+                    return Question5Fragment.newInstance(results, areQuestionsAnswered);
                 case 6:
-                    return Question6Fragment.newInstance(results);
+                    return Question6Fragment.newInstance(results, areQuestionsAnswered);
                 case 7:
-                    return Question7Fragment.newInstance(results);
+                    return Question7Fragment.newInstance(results, areQuestionsAnswered);
             }
         }
 
