@@ -1,60 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grey"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/tvFragFirst"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="31dp"
-        android:fontFamily="sans-serif-light"
-        android:paddingTop="24dp"
-        android:text="@string/title"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvFragFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="311dp"
-        android:src="@drawable/deeer" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="31dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="24dp"
+            android:text="@string/title"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/intro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="@string/intro"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="311dp"
+            android:layout_gravity="center"
+            android:src="@drawable/deeer" />
 
-    <TextView
-        android:id="@+id/swipe"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:layout_gravity="right"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:paddingRight="16dp"
-        android:text="@string/swipe_right"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/intro"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:text="@string/swipe_right"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
+    </LinearLayout>
+
+</ScrollView>

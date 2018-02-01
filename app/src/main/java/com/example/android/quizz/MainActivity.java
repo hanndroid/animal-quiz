@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         EditText sealOrSeaLion = findViewById(R.id.q7seaOrSeaLion);
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
-        if (text.contains("sea") && text.contains("lion")) {
+        if (text.contains("sea") && text.contains("lion")) { /*results ++;*/
         } else {
         }
     }
