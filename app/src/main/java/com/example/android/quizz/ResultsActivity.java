@@ -6,13 +6,26 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class ResultsActivity extends AppCompatActivity {
 
-        @Override
+    public static final String ARG_FROM_MAIN = "arg";
+    String passedArg = "";
+
+    @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+
+            passedArg = getIntent().getStringExtra(ARG_FROM_MAIN);
+            System.out.println("passedArg = " + passedArg);
+
+            /*TextView resultsTextView = (TextView) findViewById(R.id.resultsTextView);
+            if (passedArg!=null && resultsTextView!=null) {
+                resultsTextView.setText(passedArg);
+                System.out.println("YEEEEY");
+            }*/
 
             ViewPager pager = findViewById(R.id.viewPager);
             pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
@@ -26,12 +39,7 @@ public class ResultsActivity extends AppCompatActivity {
 
             @Override
             public Fragment getItem(int pos) {
-                switch (pos) {
-                    default:
-                        return IntroFragment.newInstance();
-                    case 0:
-                        return ResultsFragment.newInstance();
-                }
+                return ResultsFragment.newInstance(passedArg);
             }
 
             @Override

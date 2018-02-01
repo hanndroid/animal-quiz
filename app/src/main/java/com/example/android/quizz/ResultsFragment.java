@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class ResultsFragment extends Fragment {
 
+    private static String arg;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_results, container, false);
@@ -16,15 +18,26 @@ public class ResultsFragment extends Fragment {
         TextView tv = v.findViewById(R.id.tvFragThird);
         tv.setText(getArguments().getString("msg"));
 
+        TextView resultsTextView = (TextView) v.findViewById(R.id.resultsTextView);
+
+        if (resultsTextView!=null) {
+            resultsTextView.setText(arg);
+            System.out.println("YEEEEY");
+        }
+
         return v;
     }
 
-    public static ResultsFragment newInstance() {
+    public static ResultsFragment newInstance(String passedArg) {
 
-        System.out.println("creating results fragment");
-
+        System.out.println("creating results fragment; " + passedArg);
+        arg = passedArg;
         ResultsFragment f = new ResultsFragment();
         Bundle b = new Bundle();
+
+
+
+
 
         f.setArguments(b);
 

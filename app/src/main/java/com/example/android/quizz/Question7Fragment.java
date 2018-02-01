@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.android.quizz.ResultsActivity.ARG_FROM_MAIN;
+
 public class Question7Fragment extends Fragment {
 
     @Override
@@ -18,17 +20,34 @@ public class Question7Fragment extends Fragment {
         TextView tv = v.findViewById(R.id.tvFragSecond);
         tv.setText(getArguments().getString("msg"));
 
-        int results = getArguments().getInt("results");
+        final int results = getArguments().getInt("results");
         System.out.println("results = " + results);
 
         Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
+        submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                // ResultsActivity.class is our second activity
+                // we want to send results from MainActivity to ResultsActivity
+                Intent intent = new Intent(view.getContext(), ResultsActivity.class);
+                intent.putExtra(ARG_FROM_MAIN, String.valueOf(results));
+                startActivity(intent);
+
+                System.out.println("intent was set");
+                //Intent myIntent = new Intent(view.getContext(), ResultsActivity.class);
+                startActivityForResult(intent, 0);
+            }
+
+        });
+
+        /*Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), ResultsActivity.class);
                 startActivityForResult(myIntent, 0);
             }
 
-        });
+        });*/
 
         return v;
     }

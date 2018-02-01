@@ -1,6 +1,7 @@
 package com.example.android.quizz;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -15,19 +17,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int results = 0;
+    private static final String ARG_FROM_MAIN = "arg";
+    private int results = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO move me into a proper method
-        //TextView resultsTextView = (TextView) findViewById(R.id.resultsTextView);
-        //resultsTextView.setText(results);
+
+
 
         ViewPager pager = findViewById(R.id.viewPager);
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+
+
+
+
     }
 
     private class MyPagerAdapter extends FragmentPagerAdapter {
