@@ -49,7 +49,11 @@
 
     <string name="submitAnswers">See Results!</string>
 
+    <string name="scoreDeclare">Out of 8 points, you scored:</string>
+
     <string name="results">─◇ Results ◇─</string>
+    <string name="comments">Well Done!</string>
+    <string name="explanation">Not sure about all of the answers? Here are some differences among our commonly confused creatures:</string>
 
 
 
