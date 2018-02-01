@@ -49,9 +49,33 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q1alligator:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(0);
+                    // if the question 1 has not yet been answered, update results
+                    // !false == true           ( not false is true )
+                    // !true == false           ( not true is false )
+
+                    // false && false == false  ( false and false is false )
+                    // false && true == false   ( false and true is false )
+                    // true && false == false   ( true and false is false )
+                    // true && true == true     ( true and true is true )
+
+                    // false || false == false  ( false or false is false )
+                    // false || true == true    ( false or true is true )
+                    // true || false == true    ( true or false is true )
+                    // true || true == true     ( true or true is true )
+
+                    // Q1 = areQuestionsAnswered[0]
+                    // Q2 = areQuestionsAnswered[1]
+                    // Q3 = areQuestionsAnswered[2]
+                    // Q4 = areQuestionsAnswered[3]
+                    // ...
+
+                    // by default Q1 is false, i.e., not answered
+                    if(!areQuestionsAnswered[0]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q1, we set it to TRUE
+                        questionHasBeenAnswered(0);
+                    }
                 }
                 break;
             case R.id.q1crocodile:
@@ -81,9 +105,13 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.q2leopard:
                 if (checked) {
-                    results++;
-                    displayToastie("Correct! Score updated to: " + results);
-                    questionHasBeenAnswered(1);
+                    if (!areQuestionsAnswered[1]) {
+                        results++;
+                        displayToastie("Correct! Score updated to: " + results);
+                        // and now, since we HAVE answered Q2, we set it to TRUE
+                        questionHasBeenAnswered(1);
+
+                    }
                 }
                 break;
             case R.id.q2Cheetah:
