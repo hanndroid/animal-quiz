@@ -34,6 +34,7 @@
     <string name="q4alpaca">Alpacas</string>
 
     <string name="q5text">Is this a toad or a frog?</string>
+    <string name="q5text2">Select up to two answers</string>
     <string name="q5toad">Toad</string>
     <string name="q5frog">Frog</string>
     <string name="q5prince">Prince 🤴</string>

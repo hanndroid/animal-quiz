@@ -5,86 +5,92 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/grey"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/tvFragSecond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:paddingTop="60dp"
-        android:text="@string/question_five"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/q5text"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="303dp"
-        android:src="@drawable/toad" />
-
-    <RadioGroup
-        android:id="@+id/q5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey"
         android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/q5toad"
+        <TextView
+            android:id="@+id/tvFragSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingTop="25dp"
+            android:text="@string/question_five"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/q5text"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/q5text2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="303dp"
+            android:src="@drawable/toad" />
+
+
+        <CheckBox
+            android:id="@+id/q5toad"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
+            android:onClick="isToadOrFrog"
             android:text="@string/q5toad"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:onClick="isToadOrFrog"/>
+            android:textSize="20sp" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/q5frog"
-            android:layout_width="wrap_content"
+            android:layout_width="151dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
+            android:onClick="isToadOrFrog"
             android:text="@string/q5frog"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:onClick="isToadOrFrog"/>
+            android:textSize="20sp" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/q5prince"
-            android:layout_width="wrap_content"
+            android:layout_width="149dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:buttonTint="#FFFFFF"
             android:fontFamily="sans-serif-light"
+            android:onClick="isToadOrFrog"
             android:text="@string/q5prince"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:onClick="isToadOrFrog"/>
-    </RadioGroup>
+            android:textSize="20sp" />
 
 
-</LinearLayout>
+    </LinearLayout>
 
 </ScrollView>

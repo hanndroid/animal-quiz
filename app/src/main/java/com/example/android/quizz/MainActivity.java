@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void isToadOrFrog(View view) {
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((CheckBox) view).isChecked();
 
         switch (view.getId()) {
             case R.id.q5toad:
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q5prince:
                 if (checked) {
-                    displayToastie("Nice try!");
+                    displayToastie("+ 1 point for knowing your fairy tales! \uD83D\uDC4F");
                 }
                 break;
         }
