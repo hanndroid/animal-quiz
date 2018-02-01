@@ -179,8 +179,12 @@ public class MainActivity extends AppCompatActivity {
                     displayToastie("This is not a reptile");
                 }
                 break;
+
+            /*if(R.id.q6amphibian.isChecked() && R.id.q6salamander.isChecked()){
+                results = results+2;*/
+            }
         }
-    }
+    
 
     public void sealOrSeaLion(View v) {
         EditText sealOrSeaLion = findViewById(R.id.q7seaOrSeaLion);
