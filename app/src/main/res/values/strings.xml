@@ -51,18 +51,39 @@
 
     <string name="scoreDeclare">Out of 9 points, you scored:</string>
 
+    <string name="pattern">○・●・○・●・○・●・○・●・○・●・○</string>
+
     <string name="results">─◇ Results ◇─</string>
     <string name="comments">Well Done!</string>
-    <string name="explanation">Not sure about all of the answers? Here are some differences among our commonly confused creatures:</string>
+    <string name="explanation">Not sure about some of the answers? Here are some differences among
+        our commonly confused creatures:</string>
 
-    <string name="res1">1. Correct answer: Alligator</string>
-    <string name="res2">2. Correct answer: Leopard</string>
-    <string name="res3">3. Correct answer: Dolphin</string>
-    <string name="res4">4. Correct answer: Alpacas</string>
-    <string name="res5">5. Correct answer: Toad</string>
-    <string name="res6">6. Correct answer: Salamander, Amphibian</string>
-    <string name="res7">7. Correct answer: Sea Lion</string>
+    <string name="res1"> Question 1 </string>
+    <string name="res1a">Correct answer: Alligator</string>
+    <string name="res2"> Question 2 </string>
+    <string name="res2a">Correct answer: Leopard</string>
+    <string name="res3">Question 3</string>
+    <string name="res3a">Correct answer: dolphin</string>
+    <string name="res4">Question 4</string>
+    <string name="res4a">Correct answer: Alpacas</string>
+    <string name="res5">Question 5</string>
+    <string name="res5a">Correct answer: Toad</string>
+    <string name="res6">Question 6</string>
+    <string name="res6a">Correct answer: Salamander, Amphibian</string>
+    <string name="res7">Question 7</string>
+    <string name="res7a">Correct answer: Sea lion</string>
 
+    <string name="ex1"> The simplest way to tell between these reptiles is by the shape of their snout.
+    Alligators and caimans have more rounded snouts, whilst crocodiles are closer to a \'V\' shape, but
+        gharials have very thin, long snouts.These prehistoric looking creatures also belong to different
+        families, with alligators and caimans being part of the alligatoridae family,
+    crocodiles within crocodylidae, and gharials within the closely related group of Gavialidae. </string>
+    
+    <string name="ex2"> This group is beautifully spotted but have many distinctions. A cheetah is found
+    mainly in African and Asian grasslands and is the smallest and lightest of the group, built
+    for speed and holding the title as the fastest land animal. It has dark spots which are solid and round, unlike the
+    rosette shapes of leopards, which live across Africa, Middle East and Asia. Jaguars are fund across the Americas
+    and also have rosette shaped spots, but are larger in size and stronger than leopards.</string>
 
 </resources>
 
