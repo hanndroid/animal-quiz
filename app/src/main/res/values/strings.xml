@@ -59,31 +59,63 @@
         our commonly confused creatures:</string>
 
     <string name="res1"> Question 1 </string>
-    <string name="res1a">Correct answer: Alligator</string>
+    <string name="res1a">Correct answer: Alligator 🐊</string>
     <string name="res2"> Question 2 </string>
-    <string name="res2a">Correct answer: Leopard</string>
+    <string name="res2a">Correct answer: Leopard 🐆</string>
     <string name="res3">Question 3</string>
-    <string name="res3a">Correct answer: dolphin</string>
+    <string name="res3a">Correct answer: dolphin 🐬</string>
     <string name="res4">Question 4</string>
-    <string name="res4a">Correct answer: Alpacas</string>
+    <string name="res4a">Correct answer: Alpacas ^ᴥ^</string>
     <string name="res5">Question 5</string>
-    <string name="res5a">Correct answer: Toad</string>
+    <string name="res5a">Correct answer: Toad 🐸</string>
     <string name="res6">Question 6</string>
-    <string name="res6a">Correct answer: Salamander, Amphibian</string>
+    <string name="res6a">Correct answer: Salamander, Amphibian 🦎</string>
     <string name="res7">Question 7</string>
-    <string name="res7a">Correct answer: Sea lion</string>
+    <string name="res7a">Correct answer: Sea lion (ᵔᴥᵔ)</string>
 
     <string name="ex1"> The simplest way to tell between these reptiles is by the shape of their snout.
-    Alligators and caimans have more rounded snouts, whilst crocodiles are closer to a \'V\' shape, but
-        gharials have very thin, long snouts.These prehistoric looking creatures also belong to different
-        families, with alligators and caimans being part of the alligatoridae family,
+    Alligators and caimans have more rounded snouts, whilst a crocodile\'s is closer to a \'V\' shape. However
+        gharials have a distinctive snout which is much thinner and longer.These prehistoric looking
+        creatures also belong to different families, with alligators and caimans being part of the alligatoridae family,
     crocodiles within crocodylidae, and gharials within the closely related group of Gavialidae. </string>
     
     <string name="ex2"> This group is beautifully spotted but have many distinctions. A cheetah is found
     mainly in African and Asian grasslands and is the smallest and lightest of the group, built
     for speed and holding the title as the fastest land animal. It has dark spots which are solid and round, unlike the
-    rosette shapes of leopards, which live across Africa, Middle East and Asia. Jaguars are fund across the Americas
+    rosette shapes of leopards, which live across Africa, Middle East and Asia. Jaguars are found across the Americas
     and also have rosette shaped spots, but are larger in size and stronger than leopards.</string>
+
+    <string name="ex3">The main differences between dolphins and porpoises are in the shapes of their bodies.
+        Dolphins have elongated beaks whilst porpoises have rounded beaks. Dolphins also have longer bodies.
+    However, both species are very intelligent, with large, complex brains and have a structure in
+        their forehead which generates sound waves, helping them to navigate underwater.</string>
+
+    <string name="ex4">Alpacas are small- a llama is almost twice the size of
+    an alpaca. Alpacas have smaller ears, whilst llamas have large ears that point forward. Alpacas
+         also have denser, yet softer coats. This is because they were bred for wool, whilst llamas
+    were often used to carry heavy loads or guard premises, including guarding herds
+    of alpacas. Llamas are known to spit when they feel threatened, but alpacas, with a more gentle nature,
+    rarely do this.</string>
+
+    <string name="ex5">Toads and frogs can often be differentiated by their skin and legs. Generally, frogs have
+    smooth skin covered in a layer of mucus, whilst toads have a rougher, thicker skin. Due to their
+        skin type, frogs need to stay closer to water sources than toads, which require less moisture.
+        Frogs also have longer legs and often move by jumping, unlike toads which usually crawl.</string>
+
+    <string name="ex6"> Lizards are reptiles, but salamanders are amphibians, which give them several
+        distinctions. Salamanders are found in habitats that contain moisture and water, whilst lizards
+        are adapted to hotter climates, often basking in the sun and requiring little water to survive.
+        This leads to differences in skin composition, with lizards having dry skin and scales, whilst a
+        salamander\'s skin is smooth and moist. Many salamanders lay soft eggs in water and their young
+        hatch with gills, which metamorphosize like frogs and toads, whilst lizards hatch from a hard
+        shell and do not metamorphosize.</string>
+
+    <string name="ex7">Seals and sea lions look similar but have some noticeable
+    differences. Sea lions have ear flaps, which seals do not. Sea lions also have
+    longer front and back flippers that can rotate, allowing them greater mobility on land. A seal has smaller
+        back flippers that do not rotate, so they scoot on their bellies to move on land, almost
+        like a caterpillar. Seals are more solitary, quiet and spend much more time in water than sea lions,
+        which often gather on land in large groups, barking loudly!</string>
 
 </resources>
 

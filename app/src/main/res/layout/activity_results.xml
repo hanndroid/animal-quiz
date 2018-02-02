@@ -101,7 +101,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingLeft="6dp"
             android:text="@string/res1a"
-            android:textColor="#FFFFFF"
+            android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -134,7 +134,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingLeft="6dp"
             android:text="@string/res2a"
-            android:textColor="#FFFFFF"
+            android:textColor="#FFEB3B"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -146,6 +146,171 @@
             android:fontFamily="sans-serif-light"
             android:padding="16dp"
             android:text="@string/ex2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:paddingTop="20dp"
+            android:text="@string/res3"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:text="@string/res3a"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/ex3"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:paddingTop="20dp"
+            android:text="@string/res4"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:text="@string/res4a"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/ex4"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:paddingTop="20dp"
+            android:text="@string/res5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:text="@string/res5a"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/ex5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:paddingTop="20dp"
+            android:text="@string/res6"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:text="@string/res6a"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/ex6"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:paddingTop="20dp"
+            android:text="@string/res7"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="6dp"
+            android:text="@string/res7a"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/ex7"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="italic" />
