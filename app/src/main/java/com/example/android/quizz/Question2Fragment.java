@@ -5,24 +5,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class Question2Fragment extends Fragment {
 
-    public static Question2Fragment newInstance(int results, boolean[] areQuestionsAnswered) {
-
-        Question2Fragment f = new Question2Fragment();
-        Bundle b = new Bundle();
-        b.putInt("results", results);
-        f.setArguments(b);
-
-        return f;
+    public static Question2Fragment newInstance() {
+        return new Question2Fragment();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_question_2, container, false);
-        return v;
+        return inflater.inflate(R.layout.activity_question_2, container, false);
     }
 
 }

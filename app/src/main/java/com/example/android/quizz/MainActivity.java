@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -16,17 +17,23 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private int results = 0;
-    private boolean[] areQuestionsAnswered = new boolean[7];
+    private int[] areQuestionsAnswered = new int[7];
+
+    public int getResults() {
+        return results;
+    }
+
+    public int[] getAreQuestionsAnswered() {
+        return areQuestionsAnswered;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         ViewPager pager = findViewById(R.id.viewPager);
         pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
-
 
     }
 
@@ -38,24 +45,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void questionHasBeenAnswered(int position) {
-        areQuestionsAnswered[position] = true;
+        areQuestionsAnswered[position] = areQuestionsAnswered[position] + 1;
     }
 
     public void guessReptile(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-
         // Check which radio button was clicked
         switch (view.getId()) {
             case R.id.q1alligator:
                 if (checked) {
-
                     // by default Q1 is false, i.e., not answered
-                    if (!areQuestionsAnswered[0]) {
+                    if (areQuestionsAnswered[0] == 0) {
                         results++;
                         // and now, since we HAVE answered Q1, we set it to TRUE
                         questionHasBeenAnswered(0);
-
                     }
                 }
                 break;
@@ -79,15 +83,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void isLeopardOrCheetah(View view) {
         boolean checked = ((RadioButton) view).isChecked();
-
         switch (view.getId()) {
             case R.id.q2leopard:
                 if (checked) {
                     results++;
-                    if (!areQuestionsAnswered[1]) {
+                    if (areQuestionsAnswered[1] == 0) {
                         // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(1);
-
+                        results++;
                     }
                 }
                 break;
@@ -107,15 +110,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void isPorpoiseOrDolphin(View view) {
         boolean checked = ((RadioButton) view).isChecked();
-
         switch (view.getId()) {
             case R.id.q3dolphin:
                 if (checked) {
-                    if (!areQuestionsAnswered[2]) {
+                    if (areQuestionsAnswered[2] == 0) {
                         results++;
                         // and now, since we HAVE answered Q3, we set it to TRUE
                         questionHasBeenAnswered(2);
-
                     }
                 }
                 break;
@@ -129,17 +130,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void isLlamaOrAlpaca(View view) {
         boolean checked = ((RadioButton) view).isChecked();
-
         switch (view.getId()) {
             case R.id.q4alpacas:
                 if (checked) {
                     results++;
-
-                    if (!areQuestionsAnswered[3]) {
+                    if (areQuestionsAnswered[3] == 0) {
+                        results++;
                         // and now, since we HAVE answered Q4, we set it to TRUE
                         questionHasBeenAnswered(3);
                     }
-
                 }
                 break;
             case R.id.q4llamas:
@@ -152,15 +151,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void isToadOrFrog(View view) {
         boolean checked = ((CheckBox) view).isChecked();
-
         switch (view.getId()) {
             case R.id.q5toad:
                 if (checked) {
-                    results++;
-                    if (!areQuestionsAnswered[4]) {
+                    if (areQuestionsAnswered[4] == 0 || areQuestionsAnswered[4] == 1) {
                         // and now, since we HAVE answered Q5, we set it to TRUE
+                        results++;
                         questionHasBeenAnswered(4);
-
                     }
                 }
                 break;
@@ -171,13 +168,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q5prince:
                 if (checked) {
-                    if (!areQuestionsAnswered[4]) {
-                        results++;
+                    if (areQuestionsAnswered[4] == 0 || areQuestionsAnswered[4] == 1) {
                         // and now, since we HAVE answered Q4, we set it to TRUE
-                        questionHasBeenAnswered(4);
-
-
                         displayToastie("You know your fairy tales!");
+                        results++;
                         questionHasBeenAnswered(4);
                     }
                     break;
@@ -187,29 +181,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void lizardOrReptile(View view) {
         boolean checked = ((CheckBox) view).isChecked();
-
         switch (view.getId()) {
             case R.id.q6salamander:
                 if (checked) {
-                    results++;
-                    if (!areQuestionsAnswered[5]) {
+                    if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[5] == 1) {
                         // and now, since we HAVE answered Q6, we set it to TRUE
+                        results++;
                         questionHasBeenAnswered(5);
-
                     }
                 }
                 break;
             case R.id.q6amphibian:
                 if (checked) {
-                    if (!areQuestionsAnswered[5]) {
+                    if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[4] == 1) {
                         // and now, since we HAVE answered Q6, we set it to TRUE
-                        questionHasBeenAnswered(5);
                         results++;
-
+                        questionHasBeenAnswered(5);
                     }
                 }
                 break;
-
             case R.id.q6lizard:
                 if (checked) {
                     questionHasBeenAnswered(5);
@@ -225,16 +215,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void sealOrSeaLion(View v) {
+    public void sealOrSeaLion(View view) {
         EditText sealOrSeaLion = findViewById(R.id.q7seaOrSeaLion);
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
         if (text.contains("sea") && text.contains("lion")) {
-            if (!areQuestionsAnswered[6]) {
+            if (areQuestionsAnswered[6] == 0) {
                 results++;
                 // and now, since we HAVE answered Q7, we set it to TRUE
                 questionHasBeenAnswered(6);
-                questionHasBeenAnswered(6);
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(sealOrSeaLion.getWindowToken(), 0);
             }
         }
     }
@@ -252,19 +243,19 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     return IntroFragment.newInstance();
                 case 1:
-                    return Question1Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question1Fragment.newInstance();
                 case 2:
-                    return Question2Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question2Fragment.newInstance();
                 case 3:
-                    return Question3Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question3Fragment.newInstance();
                 case 4:
-                    return Question4Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question4Fragment.newInstance();
                 case 5:
-                    return Question5Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question5Fragment.newInstance();
                 case 6:
-                    return Question6Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question6Fragment.newInstance();
                 case 7:
-                    return Question7Fragment.newInstance(results, areQuestionsAnswered);
+                    return Question7Fragment.newInstance();
             }
         }
 
