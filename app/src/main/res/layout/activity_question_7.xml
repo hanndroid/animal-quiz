@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/question7View"
@@ -21,7 +17,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="72dp"
+            android:layout_height="54dp"
             android:layout_gravity="center"
             android:fontFamily="sans-serif-light"
             android:paddingTop="30dp"
@@ -32,17 +28,15 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="293dp"
-            android:src="@drawable/sealionpic" />
+            android:layout_height="326dp"
+            android:src="@drawable/seal" />
 
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="32dp"
             android:layout_gravity="center"
             android:fontFamily="sans-serif-light"
-            android:paddingBottom="6dp"
-            android:paddingTop="16dp"
             android:text="@string/q6text"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
@@ -61,18 +55,25 @@
             android:textSize="18sp"
             android:theme="@android:style/Theme.Light" />
 
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/submit_answers"
-            android:layout_width="150dp"
+            android:layout_width="80dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#E65100"
             android:onClick="submitAnswers"
+            android:padding="6dp"
             android:text="@string/submitAnswers"
-            android:textSize="16sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
+    </RelativeLayout>
 
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
