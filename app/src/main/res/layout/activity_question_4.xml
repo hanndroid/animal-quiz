@@ -5,76 +5,74 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/grey"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/tvFragSecond"
-        android:layout_width="wrap_content"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:paddingTop="60dp"
-        android:text="@string/question_four"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/q4text"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="302dp"
-        android:src="@drawable/alpaca" />
-
-    <RadioGroup
-        android:id="@+id/q4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:background="@drawable/grey"
         android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/q4llamas"
+        <TextView
+            android:id="@+id/tvFragSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="#FFFFFF"
+            android:layout_gravity="center"
             android:fontFamily="sans-serif-light"
-            android:paddingLeft="16dp"
-            android:text="@string/q4llama"
+            android:paddingTop="60dp"
+            android:text="@string/question_four"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            android:onClick="isLlamaOrAlpaca"/>
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/q4alpacas"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="#FFFFFF"
+            android:layout_gravity="center"
             android:fontFamily="sans-serif-light"
-            android:paddingLeft="16dp"
-            android:text="@string/q4alpaca"
+            android:text="@string/q4text"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:onClick="isLlamaOrAlpaca"/>
-    </RadioGroup>
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="302dp"
+            android:src="@drawable/alpaca" />
+
+        <RadioGroup
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q4llamas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:fontFamily="sans-serif-light"
+                android:onClick="isLlamaOrAlpaca"
+                android:paddingLeft="16dp"
+                android:text="@string/q4llama"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q4alpacas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:fontFamily="sans-serif-light"
+                android:onClick="isLlamaOrAlpaca"
+                android:paddingLeft="16dp"
+                android:text="@string/q4alpaca"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </LinearLayout>
 
 </ScrollView>

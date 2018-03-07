@@ -18,7 +18,7 @@
     <string name="q1Caiman">Caiman</string>
     <string name="q1Gharial">Gharial</string>
 
-    <string name="q2text">Is this a leopard or a cheetah?</string>
+    <string name="q2text">Which big cat is this?</string>
     <string name="q2leopard">Leopard</string>
     <string name="q2cheetah">Cheetah</string>
     <string name="q2jaguar">Jaguar</string>
@@ -49,7 +49,7 @@
 
     <string name="submitAnswers">Press me!</string>
 
-    <string name="scoreDeclare">Out of 9 points, you scored:</string>
+    <string name="scoreDeclare">Out of 11 points, you scored:</string>
 
     <string name="pattern">○・●・○・●・○・●・○・●・○・●・○</string>
 
