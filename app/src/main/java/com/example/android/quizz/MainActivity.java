@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        int number = 1;
+        int numberTwo = 5;
+        int result = (number + numberTwo);
+        System.out.println(result);
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -46,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void questionHasBeenAnswered(int position, boolean isCorrectAnswer) {
         if(isCorrectAnswer) {
-            areQuestionsAnswered[position] = areQuestionsAnswered[position] + 1;
+            int currentValue = areQuestionsAnswered[position];
+            areQuestionsAnswered[position] = currentValue + 1;
         } else {
             areQuestionsAnswered[position] = 0;
         }
@@ -57,30 +65,42 @@ public class MainActivity extends AppCompatActivity {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
         // Check which radio button was clicked
+        boolean questionNotAnswered = areQuestionsAnswered[0] == 0;
+
         switch (view.getId()) {
             case R.id.q1alligator:
                 if (checked) {
-                    // by default Q1 is false, i.e., not answered
-                    if (areQuestionsAnswered[0] == 0) {
-                        results++;
-                        // and now, since we HAVE answered Q1, we set it to TRUE
+                    if (questionNotAnswered) {
+                        // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(0, true);
+                        results++;
                     }
                 }
+
                 break;
             case R.id.q1crocodile:
                 if (checked) {
-                    questionHasBeenAnswered(0, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(0, false);
+                        results--;
+                    }
                 }
                 break;
             case R.id.q1gharial:
                 if (checked) {
-                    questionHasBeenAnswered(0, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(0, false);
+                        results--;
+                    }
+
                 }
                 break;
             case R.id.q1caiman:
                 if (checked) {
-                    questionHasBeenAnswered(0, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(0, false);
+                        results--;
+                    }
                 }
                 break;
         }
@@ -88,11 +108,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void isLeopardOrCheetah(View view) {
         boolean checked = ((RadioButton) view).isChecked();
+        boolean questionNotAnswered = areQuestionsAnswered[1] == 0;
         switch (view.getId()) {
             case R.id.q2leopard:
                 if (checked) {
-                    results++;
-                    if (areQuestionsAnswered[1] == 0) {
+                    if (questionNotAnswered) {
                         // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(1, true);
                         results++;
@@ -101,12 +121,18 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q2Cheetah:
                 if (checked) {
-                    questionHasBeenAnswered(1, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(1, false);
+                        results--;
+                    }
                 }
                 break;
             case R.id.q2Jaguar:
                 if (checked) {
-                    questionHasBeenAnswered(1, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(1, false);
+                        results--;
+                    }
                 }
                 break;
 
@@ -115,19 +141,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void isPorpoiseOrDolphin(View view) {
         boolean checked = ((RadioButton) view).isChecked();
+        boolean questionNotAnswered = areQuestionsAnswered[2] == 0;
         switch (view.getId()) {
             case R.id.q3dolphin:
                 if (checked) {
-                    if (areQuestionsAnswered[2] == 0) {
-                        results++;
-                        // and now, since we HAVE answered Q3, we set it to TRUE
+                    if (questionNotAnswered) {
+                        // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(2, true);
+                        results++;
                     }
                 }
                 break;
             case R.id.q3porpoise:
                 if (checked) {
-                    questionHasBeenAnswered(2, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(2, false);
+                        results--;
+                    }
                 }
                 break;
         }
@@ -135,20 +165,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void isLlamaOrAlpaca(View view) {
         boolean checked = ((RadioButton) view).isChecked();
+        boolean questionNotAnswered = areQuestionsAnswered[3] == 0;
         switch (view.getId()) {
             case R.id.q4alpacas:
                 if (checked) {
-                    results++;
-                    if (areQuestionsAnswered[3] == 0) {
-                        results++;
-                        // and now, since we HAVE answered Q4, we set it to TRUE
+                    if (questionNotAnswered) {
+                        // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(3, true);
+                        results++;
                     }
                 }
                 break;
             case R.id.q4llamas:
                 if (checked) {
-                    questionHasBeenAnswered(3, false);
+                    if (!questionNotAnswered) {
+                        questionHasBeenAnswered(3, false);
+                        results--;
+                    }
                 }
                 break;
         }
@@ -168,7 +201,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q5frog:
                 if (checked) {
-                    questionHasBeenAnswered(4, false);
+                    if (areQuestionsAnswered[4] == 1 || areQuestionsAnswered[4] == 2) {
+                        // and now, since we HAVE answered Q5, we set it to TRUE
+                        results--;
+                        questionHasBeenAnswered(4, false);
+                    }
                 }
                 break;
             case R.id.q5prince:
@@ -182,6 +219,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
         }
+        ((CheckBox) view).setEnabled(false); // disable uncheckingx
     }
 
     public void lizardOrReptile(View view) {
@@ -198,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q6amphibian:
                 if (checked) {
-                    if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[4] == 1) {
+                    if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[5] == 1) {
                         // and now, since we HAVE answered Q6, we set it to TRUE
                         results++;
                         questionHasBeenAnswered(5, true);
@@ -207,16 +245,25 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.q6lizard:
                 if (checked) {
-                    questionHasBeenAnswered(5, false);
+                    if (areQuestionsAnswered[5] == 1 || areQuestionsAnswered[5] == 2) {
+                        // and now, since we HAVE answered Q6, we set it to TRUE
+                        results--;
+                        questionHasBeenAnswered(5, false);
+                    }
                 }
                 break;
             case R.id.q6reptile:
                 if (checked) {
-                    questionHasBeenAnswered(5, false);
+                    if (areQuestionsAnswered[5] == 1 || areQuestionsAnswered[5] == 2) {
+                        // and now, since we HAVE answered Q6, we set it to TRUE
+                        results--;
+                        questionHasBeenAnswered(5, false);
+                    }
                 }
                 break;
 
         }
+        ((CheckBox) view).setEnabled(false); // disable uncheckingx
     }
 
 
@@ -234,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        displayToastie("Your total score is:\n" + results + "/11\uD83C\uDFC6");
+        displayToastie("Your total score is:\n" + results + "/9\uD83C\uDFC6");
     }
 
     private class MyPagerAdapter extends FragmentPagerAdapter {

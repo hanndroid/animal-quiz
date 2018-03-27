@@ -95,7 +95,6 @@
                 android:text="@string/q1Caiman"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
-            />
         </RadioGroup>
 
     </LinearLayout>
