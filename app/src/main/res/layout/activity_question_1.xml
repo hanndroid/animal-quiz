@@ -53,7 +53,7 @@
             android:paddingLeft="16dp">
 
             <RadioButton
-                android:id="@+id/q1alligator"
+                android:id="@+id/rb_q1alligator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFFFFF"
@@ -64,7 +64,7 @@
                 android:textSize="20sp" />
 
             <RadioButton
-                android:id="@+id/q1crocodile"
+                android:id="@+id/rb_q1crocodile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFFFFF"
@@ -75,7 +75,7 @@
                 android:textSize="20sp" />
 
             <RadioButton
-                android:id="@+id/q1caiman"
+                android:id="@+id/rb_q1caiman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFFFFF"
@@ -86,7 +86,7 @@
                 android:textSize="20sp" />
 
             <RadioButton
-                android:id="@+id/q1gharial"
+                android:id="@+id/rb_q1gharial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FFFFFF"

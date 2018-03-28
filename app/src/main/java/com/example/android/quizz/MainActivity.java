@@ -68,17 +68,17 @@ public class MainActivity extends AppCompatActivity {
         boolean questionNotAnswered = areQuestionsAnswered[0] == 0;
 
         switch (view.getId()) {
-            case R.id.q1alligator:
+            case R.id.rb_q1alligator:
                 if (checked) {
                     if (questionNotAnswered) {
-                        // and now, since we HAVE answered Q2, we set it to TRUE
+                        // and now, since we HAVE answered the question, we set it to TRUE
                         questionHasBeenAnswered(0, true);
                         results++;
                     }
                 }
 
                 break;
-            case R.id.q1crocodile:
+            case R.id.rb_q1crocodile:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(0, false);
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 break;
-            case R.id.q1gharial:
+            case R.id.rb_q1gharial:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(0, false);
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 break;
-            case R.id.q1caiman:
+            case R.id.rb_q1caiman:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(0, false);
@@ -110,16 +110,15 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         boolean questionNotAnswered = areQuestionsAnswered[1] == 0;
         switch (view.getId()) {
-            case R.id.q2leopard:
+            case R.id.rb_q2leopard:
                 if (checked) {
                     if (questionNotAnswered) {
-                        // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(1, true);
                         results++;
                     }
                 }
                 break;
-            case R.id.q2Cheetah:
+            case R.id.rb_q2Cheetah:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(1, false);
@@ -127,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 break;
-            case R.id.q2Jaguar:
+            case R.id.rb_q2Jaguar:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(1, false);
@@ -143,16 +142,15 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         boolean questionNotAnswered = areQuestionsAnswered[2] == 0;
         switch (view.getId()) {
-            case R.id.q3dolphin:
+            case R.id.rb_q3dolphin:
                 if (checked) {
                     if (questionNotAnswered) {
-                        // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(2, true);
                         results++;
                     }
                 }
                 break;
-            case R.id.q3porpoise:
+            case R.id.rb_q3porpoise:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(2, false);
@@ -167,16 +165,15 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((RadioButton) view).isChecked();
         boolean questionNotAnswered = areQuestionsAnswered[3] == 0;
         switch (view.getId()) {
-            case R.id.q4alpacas:
+            case R.id.rb_q4alpacas:
                 if (checked) {
                     if (questionNotAnswered) {
-                        // and now, since we HAVE answered Q2, we set it to TRUE
                         questionHasBeenAnswered(3, true);
                         results++;
                     }
                 }
                 break;
-            case R.id.q4llamas:
+            case R.id.rb_q4llamas:
                 if (checked) {
                     if (!questionNotAnswered) {
                         questionHasBeenAnswered(3, false);
@@ -190,28 +187,25 @@ public class MainActivity extends AppCompatActivity {
     public void isToadOrFrog(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()) {
-            case R.id.q5toad:
+            case R.id.cb_q5toad:
                 if (checked) {
                     if (areQuestionsAnswered[4] == 0 || areQuestionsAnswered[4] == 1) {
-                        // and now, since we HAVE answered Q5, we set it to TRUE
                         results++;
                         questionHasBeenAnswered(4, true);
                     }
                 }
                 break;
-            case R.id.q5frog:
+            case R.id.cb_q5frog:
                 if (checked) {
                     if (areQuestionsAnswered[4] == 1 || areQuestionsAnswered[4] == 2) {
-                        // and now, since we HAVE answered Q5, we set it to TRUE
                         results--;
                         questionHasBeenAnswered(4, false);
                     }
                 }
                 break;
-            case R.id.q5prince:
+            case R.id.cb_q5prince:
                 if (checked) {
                     if (areQuestionsAnswered[4] == 0 || areQuestionsAnswered[4] == 1) {
-                        // and now, since we HAVE answered Q4, we set it to TRUE
                         displayToastie("You know your fairy tales!");
                         results++;
                         questionHasBeenAnswered(4, true);
@@ -219,43 +213,39 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
         }
-        ((CheckBox) view).setEnabled(false); // disable uncheckingx
+        ((CheckBox) view).setEnabled(false); // disable unchecking
     }
 
     public void lizardOrReptile(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()) {
-            case R.id.q6salamander:
+            case R.id.cb_q6salamander:
                 if (checked) {
                     if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[5] == 1) {
-                        // and now, since we HAVE answered Q6, we set it to TRUE
                         results++;
                         questionHasBeenAnswered(5, true);
                     }
                 }
                 break;
-            case R.id.q6amphibian:
+            case R.id.cb_q6amphibian:
                 if (checked) {
                     if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[5] == 1) {
-                        // and now, since we HAVE answered Q6, we set it to TRUE
                         results++;
                         questionHasBeenAnswered(5, true);
                     }
                 }
                 break;
-            case R.id.q6lizard:
+            case R.id.cb_q6lizard:
                 if (checked) {
                     if (areQuestionsAnswered[5] == 1 || areQuestionsAnswered[5] == 2) {
-                        // and now, since we HAVE answered Q6, we set it to TRUE
                         results--;
                         questionHasBeenAnswered(5, false);
                     }
                 }
                 break;
-            case R.id.q6reptile:
+            case R.id.cb_q6reptile:
                 if (checked) {
                     if (areQuestionsAnswered[5] == 1 || areQuestionsAnswered[5] == 2) {
-                        // and now, since we HAVE answered Q6, we set it to TRUE
                         results--;
                         questionHasBeenAnswered(5, false);
                     }
@@ -263,18 +253,17 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
-        ((CheckBox) view).setEnabled(false); // disable uncheckingx
+        ((CheckBox) view).setEnabled(false); // disable unchecking
     }
 
 
     public void sealOrSeaLion(View view) {
-        EditText sealOrSeaLion = findViewById(R.id.q7seaOrSeaLion);
+        EditText sealOrSeaLion = findViewById(R.id.et_q7seaOrSeaLion);
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
         if (text.contains("sea") && text.contains("lion")) {
             if (areQuestionsAnswered[6] == 0) {
                 results++;
-                // and now, since we HAVE answered Q7, we set it to TRUE
                 questionHasBeenAnswered(6, true);
                 InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(sealOrSeaLion.getWindowToken(), 0);

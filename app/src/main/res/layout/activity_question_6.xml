@@ -54,7 +54,7 @@
 
 
         <CheckBox
-            android:id="@+id/q6lizard"
+            android:id="@+id/cb_q6lizard"
             android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -66,7 +66,7 @@
             android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/q6amphibian"
+            android:id="@+id/cb_q6amphibian"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -78,7 +78,7 @@
             android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/q6salamander"
+            android:id="@+id/cb_q6salamander"
             android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -90,7 +90,7 @@
             android:textSize="18sp" />
 
         <CheckBox
-            android:id="@+id/q6reptile"
+            android:id="@+id/cb_q6reptile"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -52,7 +52,7 @@
         android:paddingLeft="16dp">
 
         <RadioButton
-            android:id="@+id/q3porpoise"
+            android:id="@+id/rb_q3porpoise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
@@ -63,7 +63,7 @@
             android:onClick="isPorpoiseOrDolphin"/>
 
         <RadioButton
-            android:id="@+id/q3dolphin"
+            android:id="@+id/rb_q3dolphin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"

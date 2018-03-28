@@ -20,7 +20,7 @@ public class Question7Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_question_7, container, false);
 
-        Button submitAnswersBtn = v.findViewById(R.id.submit_answers);
+        Button submitAnswersBtn = v.findViewById(R.id.bt_submitAnswers);
         submitAnswersBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 // we want make sure we get results ONLY after the last fragment actually updated stuff

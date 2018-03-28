@@ -49,7 +49,7 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/q2Cheetah"
+            android:id="@+id/rb_q2Cheetah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
@@ -60,7 +60,7 @@
             android:onClick="isLeopardOrCheetah"/>
 
         <RadioButton
-            android:id="@+id/q2leopard"
+            android:id="@+id/rb_q2leopard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
@@ -71,7 +71,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/q2Jaguar"
+            android:id="@+id/rb_q2Jaguar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#FFFFFF"
