@@ -270,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        displayToastie("Your total score is:\n" + results + "/9\uD83C\uDFC6");
+        displayToastie("Your total score is:\n" + results);
     }
 
     private class MyPagerAdapter extends FragmentPagerAdapter {

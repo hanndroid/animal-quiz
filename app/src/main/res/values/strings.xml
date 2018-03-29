@@ -35,7 +35,7 @@
     <string name="q5text2">Select up to two answers</string>
     <string name="q5toad">Toad</string>
     <string name="q5frog">Frog</string>
-    <string name="q5prince">Prince 🤴</string>
+    <string name="q5prince">Prince</string>
 
     <string name="q6text">Which type of animal is this?</string>
     <string name="q6text2">Select two correct answers:</string>
@@ -59,19 +59,19 @@
         our commonly confused creatures:</string>
 
     <string name="res1"> Question 1 </string>
-    <string name="res1a">Correct answer: Alligator 🐊</string>
+    <string name="res1a">Correct answer: Alligator</string>
     <string name="res2"> Question 2 </string>
-    <string name="res2a">Correct answer: Leopard 🐆</string>
+    <string name="res2a">Correct answer: Leopard</string>
     <string name="res3">Question 3</string>
-    <string name="res3a">Correct answer: dolphin 🐬</string>
+    <string name="res3a">Correct answer: dolphin</string>
     <string name="res4">Question 4</string>
-    <string name="res4a">Correct answer: Alpacas ^ᴥ^</string>
+    <string name="res4a">Correct answer: Alpacas</string>
     <string name="res5">Question 5</string>
-    <string name="res5a">Correct answer: Toad 🐸</string>
+    <string name="res5a">Correct answer: Toad</string>
     <string name="res6">Question 6</string>
-    <string name="res6a">Correct answer: Salamander, Amphibian 🦎</string>
+    <string name="res6a">Correct answer: Salamander, Amphibian</string>
     <string name="res7">Question 7</string>
-    <string name="res7a">Correct answer: Sea lion (ᵔᴥᵔ)</string>
+    <string name="res7a">Correct answer: Sea lion</string>
 
     <string name="ex1"> The simplest way to tell between these reptiles is by the shape of their snout.
     Alligators and caimans have more rounded snouts, whilst a crocodile\'s is closer to a \'V\' shape. However
