@@ -1,76 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/question7View"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grey"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/tvFragSecond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/question7View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:paddingTop="30dp"
-        android:text="@string/question_seven"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvFragSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:paddingTop="10dp"
-        android:text="@string/q7text"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="326dp"
-        android:src="@drawable/seal" />
-
-
-    <EditText
-        android:id="@+id/et_q7seaOrSeaLion"
-        android:layout_width="350dp"
-        android:layout_height="52dp"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-light"
-        android:hint="@string/q7bar"
-        android:inputType="textShortMessage"
-        android:onClick="sealOrSeaLion"
-        android:paddingRight="16dp"
-        android:textSize="18sp"
-        android:theme="@android:style/Theme.Light" />
-
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/bt_submitAnswers"
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:background="#E65100"
-            android:onClick="submitAnswers"
-            android:padding="6dp"
-            android:text="@string/submitAnswers"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="30dp"
+            android:text="@string/question_seven"
             android:textColor="#FFFFFF"
-            android:textSize="12sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="10dp"
+            android:text="@string/q7text"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="326dp"
+            android:src="@drawable/seal" />
+
+
+        <EditText
+            android:id="@+id/et_q7seaOrSeaLion"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/q7bar"
+            android:inputType="textShortMessage"
+            android:onClick="sealOrSeaLion"
+            android:paddingRight="16dp"
+            android:textSize="18sp"
+            android:theme="@android:style/Theme.Light" />
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_submitAnswers"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#E65100"
+                android:onClick="submitAnswers"
+                android:padding="6dp"
+                android:text="@string/submitAnswers"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
