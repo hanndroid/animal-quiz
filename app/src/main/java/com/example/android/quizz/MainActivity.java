@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void questionHasBeenAnswered(int position, boolean isCorrectAnswer) {
-        if(isCorrectAnswer) {
+        if (isCorrectAnswer) {
             int currentValue = areQuestionsAnswered[position];
             areQuestionsAnswered[position] = currentValue + 1;
         } else {
@@ -76,35 +76,9 @@ public class MainActivity extends AppCompatActivity {
                         results++;
                     }
                 }
-
-                break;
-            case R.id.rb_q1crocodile:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(0, false);
-                        results--;
-                    }
-                }
-                break;
-            case R.id.rb_q1gharial:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(0, false);
-                        results--;
-                    }
-
-                }
-                break;
-            case R.id.rb_q1caiman:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(0, false);
-                        results--;
-                    }
-                }
-                break;
         }
     }
+
 
     public void isLeopardOrCheetah(View view) {
         boolean checked = ((RadioButton) view).isChecked();
@@ -117,24 +91,6 @@ public class MainActivity extends AppCompatActivity {
                         results++;
                     }
                 }
-                break;
-            case R.id.rb_q2Cheetah:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(1, false);
-                        results--;
-                    }
-                }
-                break;
-            case R.id.rb_q2Jaguar:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(1, false);
-                        results--;
-                    }
-                }
-                break;
-
         }
     }
 
@@ -149,15 +105,6 @@ public class MainActivity extends AppCompatActivity {
                         results++;
                     }
                 }
-                break;
-            case R.id.rb_q3porpoise:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(2, false);
-                        results--;
-                    }
-                }
-                break;
         }
     }
 
@@ -172,15 +119,7 @@ public class MainActivity extends AppCompatActivity {
                         results++;
                     }
                 }
-                break;
-            case R.id.rb_q4llamas:
-                if (checked) {
-                    if (!questionNotAnswered) {
-                        questionHasBeenAnswered(3, false);
-                        results--;
-                    }
-                }
-                break;
+
         }
     }
 
@@ -213,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
         }
+
         ((CheckBox) view).setEnabled(false); // disable unchecking
     }
 
@@ -251,8 +191,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 break;
-
         }
+
         ((CheckBox) view).setEnabled(false); // disable unchecking
     }
 
