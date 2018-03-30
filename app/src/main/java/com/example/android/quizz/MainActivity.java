@@ -52,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void questionHasBeenAnswered(int position, boolean isCorrectAnswer) {
+        int currentValue = areQuestionsAnswered[position];
         if (isCorrectAnswer) {
-            int currentValue = areQuestionsAnswered[position];
             areQuestionsAnswered[position] = currentValue + 1;
         } else {
-            areQuestionsAnswered[position] = 0;
+            areQuestionsAnswered[position] = currentValue - 1;
         }
 
     }
@@ -128,27 +128,28 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.cb_q5toad:
                 if (checked) {
-                    if (areQuestionsAnswered[4] == 0 || areQuestionsAnswered[4] == 1) {
+                    if (areQuestionsAnswered[4] == 1) {
+                        displayToastie("You know your fairy tales!");
                         results++;
-                        questionHasBeenAnswered(4, true);
                     }
+                    questionHasBeenAnswered(4, true);
                 }
                 break;
             case R.id.cb_q5frog:
                 if (checked) {
-                    if (areQuestionsAnswered[4] == 1 || areQuestionsAnswered[4] == 2) {
+                    if (areQuestionsAnswered[4] == 2) {
                         results--;
-                        questionHasBeenAnswered(4, false);
                     }
+                    questionHasBeenAnswered(4, false);
                 }
                 break;
             case R.id.cb_q5prince:
                 if (checked) {
-                    if (areQuestionsAnswered[4] == 0 || areQuestionsAnswered[4] == 1) {
+                    if (areQuestionsAnswered[4] == 1) {
                         displayToastie("You know your fairy tales!");
                         results++;
-                        questionHasBeenAnswered(4, true);
                     }
+                    questionHasBeenAnswered(4, true);
                     break;
                 }
         }
@@ -161,34 +162,34 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.cb_q6salamander:
                 if (checked) {
-                    if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[5] == 1) {
+                    if (areQuestionsAnswered[5] == 1) {
                         results++;
-                        questionHasBeenAnswered(5, true);
                     }
+                    questionHasBeenAnswered(5, true);
                 }
                 break;
             case R.id.cb_q6amphibian:
                 if (checked) {
-                    if (areQuestionsAnswered[5] == 0 || areQuestionsAnswered[5] == 1) {
+                    if (areQuestionsAnswered[5] == 1) {
                         results++;
-                        questionHasBeenAnswered(5, true);
                     }
+                    questionHasBeenAnswered(5, true);
                 }
                 break;
             case R.id.cb_q6lizard:
                 if (checked) {
-                    if (areQuestionsAnswered[5] == 1 || areQuestionsAnswered[5] == 2) {
+                    if (areQuestionsAnswered[5] == 2) {
                         results--;
-                        questionHasBeenAnswered(5, false);
                     }
+                    questionHasBeenAnswered(5, false);
                 }
                 break;
             case R.id.cb_q6reptile:
                 if (checked) {
-                    if (areQuestionsAnswered[5] == 1 || areQuestionsAnswered[5] == 2) {
+                    if (areQuestionsAnswered[5] == 2) {
                         results--;
-                        questionHasBeenAnswered(5, false);
                     }
+                    questionHasBeenAnswered(5, false);
                 }
                 break;
         }
@@ -201,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
         EditText sealOrSeaLion = findViewById(R.id.et_q7seaOrSeaLion);
         String text = sealOrSeaLion.getText().toString().toLowerCase();
 
-        if (text.contains("sea") && text.contains("lion")) {
+        if (text.equalsIgnoreCase("sea lion")) {
             if (areQuestionsAnswered[6] == 0) {
                 results++;
                 questionHasBeenAnswered(6, true);
